@@ -41,147 +41,150 @@ home = ["html"]
 page = ["html", "markdown", "plaintext", "asciidoc"]
 
 # Add all translated languages here.
-[Languages]
-[Languages.ar]
+[languages]
+[languages.ar]
 languageName = "العربية"
 languageCode = "ar"
-writingDirection = "rtl"
+[languages.ar.params]
+	writingDirection = "rtl"
 
-[Languages.bn]
+[languages.bn]
 languageName = "Bengali"
 languageCode = "bn"
 
-[Languages.bs]
+[languages.bs]
 languageName = "Bosnian"
 languageCode = "bs"
 
-[Languages.ca]
+[languages.ca]
 languageName = "Català"
 languageCode = "ca"
 
-[Languages.da]
+[languages.da]
 languageName = "Dansk"
 languageCode = "da"
 
-[Languages.de]
+[languages.de]
 languageName = "Deutsch"
 languageCode = "de"
 
-[Languages.en]
+[languages.en]
 languageName = "English"
 languageCode = "en"
 weight = 1
 
-[Languages.el]
+[languages.el]
 languageName = "ελληνικά"
 languageCode = "el"
 
-[Languages.es]
+[languages.es]
 languageName = "Español"
 languageCode = "es"
 
-[Languages.fr]
+[languages.fr]
 languageName = "Français"
 languageCode = "fr"
 
-[Languages.gu]
+[languages.gu]
 languageName = "ગુજરાતી"
 languageCode = "gu"
 
-[Languages.hi]
+[languages.hi]
 languageName = "हिंदी"
 languageCode = "hi"
 
-[Languages.hu]
+[languages.hu]
 languageName = "Magyar"
 languageCode = "hu"
 
-[Languages.id]
+[languages.id]
 languageName = "Indonesian"
 languageCode = "id"
 
-[Languages.is]
+[languages.is]
 languageName = "Íslenska"
 languageCode = "is"
 
-[Languages.it]
+[languages.it]
 languageName = "Italiano"
 languageCode = "it"
 
-[Languages.iw]
+[languages.iw]
 languageName = "עברית"
 languageCode = "iw"
-writingDirection = "rtl"
+[languages.iw.params]
+	writingDirection = "rtl"
 
-[Languages.ja]
+[languages.ja]
 languageName = "日本語"
 languageCode = "ja"
 
-[Languages.mr]
+[languages.mr]
 languageName = "मराठी"
 languageCode = "mr"
 
-[Languages.kn]
+[languages.kn]
 languageName = "ಕನ್ನಡ"
 languageCode = "kn"
 
-[Languages.ko]
+[languages.ko]
 languageName = "한국어"
 languageCode = "ko"
 
-[Languages.mk]
+[languages.mk]
 languageName = "Македонски"
 languageCode = "mk"
 
-[Languages.nl]
+[languages.nl]
 languageName = "Nederlands"
 languageCode = "nl"
 
-[Languages.pl]
+[languages.pl]
 languageName = "Polski"
 languageCode = "pl"
 
-[Languages.pt]
+[languages.pt]
 languageName = "Português"
 languageCode = "pt"
 
-[Languages.pt-br]
+[languages.pt-br]
 languageName = "Português do Brasil"
 languageCode = "pt-br"
 
-[Languages.ro]
+[languages.ro]
 languageName = "Română"
 languageCode = "ro"
 
-[Languages.ru]
+[languages.ru]
 languageName = "Русский"
 languageCode = "ru"
 
-[Languages.sl]
+[languages.sl]
 languageName = "Slovenščina"
 languageCode = "sl"
 
-[Languages.sv]
+[languages.sv]
 languageName = "Svenska"
 languageCode = "sv"
 
-[Languages.tr]
+[languages.tr]
 languageName = "Türkçe"
 languageCode = "tr"
 
-[Languages.zh-tw]
+[languages.zh-tw]
 languageName = "繁體中文"
 languageCode = "zh-tw"
 
-[Languages.uk]
+[languages.uk]
 languageName = "Українська"
 languageCode = "uk"
 
-[Languages.zh-cn]
+[languages.zh-cn]
 languageName = "简体中文"
 languageCode = "zh-cn"
 
-[Languages.fa-IR]
+[languages.fa-IR]
 languageName = "فارسی"
 languageCode = "fa-IR"
-writingDirection = "rtl"
+[languages.fa-IR.params]
+	writingDirection = "rtl"
