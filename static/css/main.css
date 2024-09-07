@@ -29,7 +29,7 @@ html {
 
 body {
   color: var(--color-black);
-  font: 300 1.25rem/1.875rem "Metropolis", sans-serif;
+  font: 300 1.25rem/1.875rem "Nunito", sans-serif;
   font-synthesis: none;
   -moz-hanging-punctuation: first last allow-end;
   -ms-hanging-punctuation: first last allow-end;
@@ -178,7 +178,7 @@ strong {
 
 code,
 kbd {
-  font-family: "Metropolis", monospace;
+  font-family: monospace;
   letter-spacing: .0625rem;
 }
 
