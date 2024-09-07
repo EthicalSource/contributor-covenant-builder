@@ -1,4 +1,5 @@
 /* Hex to HSL color converter: https://colordesigner.io/convert/hextohsl */
+/* px to rem converter: https://nekocalc.com/px-to-rem-converter */
 
 * {
   margin: 0;
@@ -7,29 +8,31 @@
 
 /* Variables */
 :root {
-  --color-primary: #1e1a33;
-  --color-primary-lighter: #999999;
-  /* --color-primary: hsl(198, 90%, 27%);
-  --color-primary-lighter: hsl(198, 90%, 50%); */
-  --color-primary-lightest: hsl(198, 90%, 70%);
-  --color-green: hsl(153, 90%, 30%);
-  --color-orange: hsl(18, 100%, 50%);
-  --color-red: hsl(333, 100%, 40%);
-  --color-blue: hsl(198, 90%, 40%);
+  --color-primary: #5E2751;
+  --color-primary-darker: #3A1832;
+  --color-primary-lighter: #BD60A8;
+  --color-primary-lightest: #F5E6F1;
+  --color-green: #01A63E;
+  --color-green-darker: #016526;
+  --color-red: #E73F3F;
+  --color-red-darker: #9F1414;
+  --color-yellow: #FAC748;
+  --color-yellow-darker: #BD8905;
   --color-black: #000;
   --color-white: #FFF;
+  --color-grey: #ACA4AA;
+  --color-grey-darker: #827780;
   --color-todo: #FFFFBF;
 }
 
 /* Primary Elements */
 html {
   height: 100%;
-  font-size: .75rem;
 }
 
 body {
   color: var(--color-black);
-  font: 300 1.25rem/1.875rem "Nunito", sans-serif;
+  font: 300 1.25rem/1.75rem "Nunito", sans-serif;
   font-synthesis: none;
   -moz-hanging-punctuation: first last allow-end;
   -ms-hanging-punctuation: first last allow-end;
@@ -111,16 +114,16 @@ th {
 
 /* Headers */
 h1 {
-  font-size: 2.75rem;
+  font-size: 2.25rem;
   font-weight: 600;
-  line-height: 3rem;
+  line-height: 3.25rem;
   margin: 3rem 0;
 }
 
 h2 {
   font-size: 2rem;
   font-weight: 500;
-  line-height: 3rem;
+  line-height: 2.75rem;
   margin: 1.5rem 0;
 }
 
@@ -128,7 +131,15 @@ h2 {
   margin-top: 3rem;
 }
 
+h3 {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: normal;
+}
+
 h4 {
+  font-size: 1.563rem;
+  line-height: 2rem;
   font-weight: normal;
 }
 
@@ -364,9 +375,10 @@ button,
 input[type="text"],
 input[type="email"],
 textarea {
-  border: .0625rem solid hsl(0, 0%, 60%);
+  border: .0625rem solid var(--color-primary);
   font: inherit;
   padding: .125rem .25rem;
+  border-radius: .75rem;
 }
 
 .radio-form-group {
@@ -411,23 +423,20 @@ input[type="checkbox"] {
 }
 
 button {
-  background-color: #1e1a33;
+  background-color: var(--color-primary);
   padding: .25rem 1rem;
   color: #fff;
-  border-radius: 5px;
 }
 
 button:hover {
-  background-color: #6bcccc;
+  border-color: var(--color-primary-lighter);
 }
 
-button {
-  transition: background-color 0.5s;
-}
 input {
   margin-top: 1rem;
   height: 3rem;
 }
+
 input,
 textarea {
   width: 100%;
@@ -478,10 +487,6 @@ textarea {
   html {
     font-size: 1rem;
   }
-
-  /* header nav li {
-    font-size: .75rem;
-  } */
 
   .data-list {
     -moz-column-count: 2;
