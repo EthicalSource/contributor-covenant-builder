@@ -1,5 +1,5 @@
 +++
-title = "TODO"
+title = "Contributor Covenant"
 +++
 
 ## First heading

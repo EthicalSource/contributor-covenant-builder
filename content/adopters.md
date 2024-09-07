@@ -2,9 +2,8 @@
 title = "Adopters"
 +++
 
-## TODO
+## Adopters
 
 {{< data-list "static/adopters.csv" >}}
 
-To add your community to this list, [submit a pull
-request](#TODO).
+To add your project, community, or event to this list, [what to do](#TODO).
