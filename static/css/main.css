@@ -518,7 +518,6 @@ nav {
 
   header figcaption {
     line-height: 1.25rem;
-    font-size: 1rem;
     font-weight: 600;
   }
 
@@ -546,8 +545,10 @@ nav {
   }  
   
   header figcaption {
-    margin-top: -1rem;
+    margin-top: -1.25rem;
+    margin-left: 3rem;
     text-align: left;
+    font-size: 1.25rem;
   }
   
   header nav {
@@ -573,7 +574,7 @@ nav {
     text-align: left;
     margin-top: 0rem;
   }
-  
+
   .logo {
     float: left;
   }
