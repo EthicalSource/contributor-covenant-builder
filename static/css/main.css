@@ -524,22 +524,40 @@ nav {
 
 }
 
-@media (min-width: 640px) {
+@media (min-width: 800px) {
   html {
     font-size: 1rem;
   }
 
   .logo {
     margin: -2rem 1rem 0 0;
+    height: 3rem;
+    width: 3rem;
   }
   
+  header {
+    height: 4rem;
+    border-radius: 3rem;
+  }
+
+  figure {
+    width: 40%;
+    margin-top: 0rem;
+  }  
+  
   header figcaption {
-    margin-top: 1rem;
+    margin-top: -1rem;
+    text-align: left;
+  }
+  
+  header nav {
+    margin-top: -1rem;
   }
   
   header nav li {
-    font-size: 1rem;
+    font-size: .75rem;
     line-height: 1.25rem;
+    margin: 1rem;
   }
   
   header nav ul {
@@ -554,6 +572,10 @@ nav {
     padding: .25rem;
     text-align: left;
     margin-top: 0rem;
+  }
+  
+  .logo {
+    float: left;
   }
 
   .data-list {
