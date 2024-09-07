@@ -1,0 +1,5 @@
+# Hugo output directory
+/public
+
+# Other
+.nova/

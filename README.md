@@ -1,2 +1,2 @@
-# contributor-covenant-builder
-Working space for development of the Contributor Covenant 3 website with builder.
+# static-site-template
+Template repository for quick-to-build, responsive OES static sites.
