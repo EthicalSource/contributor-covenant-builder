@@ -3,7 +3,7 @@ Working repository for the new Contributor Covenant builder.
 
 ## Development concerns
 See CONTRIBUTING.md for more information including other ways to contribute.
-s
+
 ### Build the website locally
 To build the website locally, first [install Hugo](https://gohugo.io/getting-started/installing)
 using your package manager of choice.
