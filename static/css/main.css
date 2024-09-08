@@ -372,8 +372,14 @@ header a {
 /* Interactive Map */
 
 .map-container {
-  position: relative;
   text-size: .5rem;
+  width: 80%;
+  border: 5px solid #900;
+}
+
+.world-map {
+  object-fit: cover;
+  border: 1px solid #090;
 }
 
 #infobox {
@@ -391,7 +397,6 @@ header a {
 
 .language-info {
   display: none;
-  position: absolute;
 }
 
 /* Form controls */
