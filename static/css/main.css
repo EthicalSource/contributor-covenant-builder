@@ -369,6 +369,31 @@ header a {
   display: none;
 }
 
+/* Interactive Map */
+
+.map-container {
+  position: relative;
+  text-size: .5rem;
+}
+
+.infobox {
+  font-size: .5rem;
+  line-height: .75rem;
+  padding: .5rem;
+  text-align: left;
+  width: 5rem;
+  height: 1.75rem;
+  border: 1px solid var(--color-grey);
+  border-radius: .5rem;
+  background-color: var(--color-white);
+}
+
+#en {
+  position: absolute;
+  display: none;
+  top: 150px;
+  left: 185px;
+}
 /* Form controls */
 
 form {
