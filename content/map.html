@@ -2,25 +2,48 @@
 title = "Translations"
 +++
 
-https://www.image-map.net
-
 <div class="map-container">
 	<img src="/images/world-map.svg" usemap="#mapmap" class="map" />
-	<div class="infobox" id="en">We as members, contributors, and leaders pledge to...</div>
-	<map name="mapmap" id="mapmap">
-			<area alt="We, as members of this community, pledge" title="We, as members of this community, pledge" href="#" coords="150,185,172,212" shape="rect" class="en" onmouseover="toggleInfoBox('en');" onmouseout="toggleInfoBox('en');" />
-	</map>
+	<div id="infobox">
+		<div class="language-info" id="en">We as members, contributors, and leaders pledge to...</div>
+	</div>
 </div>
 
+<map name="mapmap" id="mapmap">
+  <area alt="We, as members of this community, pledge..." title="We, as members of this community, pledge..." href="#" coords="150,185,172,212" shape="rect" onmouseover="toggleLanguageBox('en');" onmouseout="toggleLanguageBox('en');" />
+</map>
+
 <script language="javascript">
-	
-	function toggleInfoBox(id) {
-		var infobox = document.getElementById(id);
-		if (infobox.style.display == 'block') {
-			infobox.style.display = 'none';
-		} else {
-			infobox.style.display = "block";
-		}
-	};
-	
+
+  window.addEventListener('load', function() {
+
+    function placeInfoBox(event) {
+      var infoBox = document.getElementById("infobox");
+      infoBox.style.position = "absolute";
+      infoBox.style.left = event.clientX - 90 + "px";
+      infoBox.style.top = event.clientY - 90 +  "px";
+    };
+    
+    window.addEventListener('mousemove', (event) => {
+      placeInfoBox(event);
+    });
+  
+    var infoBox = document.getElementById("infobox");
+    infoBox.addEventListener("mousemove", placeInfoBox);
+  });
+  
+  function toggleLanguageBox(id) {
+    var languageBox = document.getElementById(id);
+    var infoBox = document.getElementById("infobox");
+    
+    if (languageBox.style.display == 'block') {
+      languageBox.style.display = 'none';
+      infoBox.style.display = 'none';
+    } else {
+      languageBox.style.display = "block";
+      infoBox.style.display = "block";
+    }
+  };
+
 </script>
+

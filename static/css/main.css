@@ -376,7 +376,8 @@ header a {
   text-size: .5rem;
 }
 
-.infobox {
+#infobox {
+  display: none;
   font-size: .5rem;
   line-height: .75rem;
   padding: .5rem;
@@ -388,12 +389,11 @@ header a {
   background-color: var(--color-white);
 }
 
-#en {
-  position: absolute;
+.language-info {
   display: none;
-  top: 150px;
-  left: 185px;
+  position: absolute;
 }
+
 /* Form controls */
 
 form {
