@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Site.Title }}: {{ .Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+  </head>
+  <body{{ with .Section }} id="{{ . }}"{{ end }}>
+    <div>
+      <header>
+        <figure>
+          <a href="/">
+            <img class="logo" src="/images/logo-inverted.svg" alt="Contributor Covenant logo, which looks like two c-shaped crescents nested together.">
+          </a>
+          <figcaption>
+            <a href="/">Contributor Covenant</a>
+          </figcaption>
+        </figure>
+        {{ partial "navigation" . }}
+      </header>
+    </div>
+    <div id="veil">
+      {{ block "main" . }}
+      {{ end }}
+      {{ partial "footer" . }}
+    </div>
+  </body>
+</html>

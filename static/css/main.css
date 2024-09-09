@@ -7,18 +7,21 @@
 
 /* Variables */
 :root {
-  --color-primary: #FFFFFF;
-  --color-blue: #1E1A34;
-  --color-blue-tint: #1E1A34;
-  --color-gold: #BC8C3D;
-  --color-gold-tint: #E1D3B3;
-  --color-black: #1D1D1D;
-  --color-medium-black: #353535;
-  --color-light-grey: #7D7D7D;
-  --color-purple: #5E2751;
-  --color-white: #FFFFFF;
-  --color-purple-gradient-dark: #431237;
-  --color-purple-gradient-light: #5E2751;
+  --color-primary: #5E2751;
+  --color-primary-darker: #3A1832;
+  --color-primary-lighter: #BD60A8;
+  --color-primary-subtle: #F5E6F1;
+  --color-green: #01A63E;
+  --color-green-darker: #016526;
+  --color-red: #E73F3F;
+  --color-red-darker: #9F1414;
+  --color-yellow: #FAC748;
+  --color-yellow-darker: #BD8905;
+  --color-black: #000;
+  --color-white: #FFF;
+  --color-grey: #ACA4AA;
+  --color-grey-darker: #827780;
+  --color-todo: #FFFFBF;
 }
 
 /* Primary Elements */
@@ -28,10 +31,11 @@ html {
 }
 
 body {
-  background: var(--color-primary);
+  background: var(--color-white);
   color: var(--color-black);
-  font: 300 1.25rem/1.875rem "Source Code Pro Regular", sans-serif;
+  font: 300 1.25rem/1.75rem "Nunito", sans-serif;
   margin: 0 auto 1rem auto;
+  text-align: center;
   font-synthesis: none;
   -moz-hanging-punctuation: first last allow-end;
   -ms-hanging-punctuation: first last allow-end;
@@ -49,34 +53,6 @@ section {
   box-sizing: border-box;
 }
 
-.page-title {
-  width: 77.188rem;
-  clear: both;
-  margin-top: 20rem;
-}
-
-.page-title h1 {
-  text-transform: lowercase;
-  font-size: 3.75rem;
-  line-height: 3.75rem;
-  padding-bottom: 1rem;
-}
-
-.page-title-subpage h1 {
-  color: var(--color-black);
-}
-
-.kicker {
-  position: relative;
-  margin: 3.438rem auto 0 auto;
-  font-size: 1.625rem;
-  line-height: 1.688rem;
-}
-
-.kicker-subpage {
-  color: var(--color-black);
-}
-
 nav a {
   color: var(--color-white);
   display: block;
@@ -91,16 +67,6 @@ nav a:hover {
   text-decoration-color: var(--color-white);
 }
 
-nav.subpage a {
-  color: var(--color-black);
-}
-
-nav.subpage a:focus,
-nav.subpage a:hover {
-  color: var(--color-black);
-  text-decoration-color: var(--color-black);
-}
-
 footer ul {
   list-style: none;
   margin: 0;
@@ -113,7 +79,6 @@ footer ul li {
 
 footer ul li a {
   color: var(--color-white);
-  font-family: "Source Code Pro Regular";
   text-decoration: none;
   text-transform: lowercase;
 }
@@ -129,10 +94,6 @@ ol {
   margin: 1.5rem 1.5rem 1.5rem 0;
 }
 
-em {
-  font-family: "Source Code Pro Black Italic";
-}
-
 li {
   margin-bottom: .375rem;
 }
@@ -142,22 +103,22 @@ strong {
 }
 
 header {
-  color: var(--color-white);
-  background: var(--color-blue);
-  height: 67.5rem;
+  color: var(--color-black);
+  background: var(--color-primary-subtle);
+  width: 80%;
+  border-radius: 1rem;
 }
 
 footer {
+  text-align: left;
   box-sizing: border-box;
   color: var(--color-white);
-  background: var(--color-blue);
+  background: var(--color-primary);
   width: 77.188rem;
   clear: both;
-  font-family: "Source Code Pro Regular";
 }
 
 footer h2 {
-  font-family: "Backlash Small Caps";
   margin: 1.25rem;
 }
 
@@ -187,26 +148,21 @@ blockquote {
   border-left: .75rem solid var(--color-light-grey);
   margin-left: 1.25rem;
   padding-left: 2.25rem;
-  font-family: "Source Code Pro Italic";
 }
 
 /* Headers */
 h1 {
-  font-family: "Coco Sharp Extra Bold";
-  font-size: 1rem;
+  font-size: 2.25rem;
   font-weight: 600;
-  letter-spacing: .125rem;
-  line-height: 3rem;
-  margin: 1.5rem;
-  text-transform: lowercase;
+  line-height: 3.25rem;
+  margin: 3rem 0;
 }
 
 h2 {
-  font-family: "Backlash Small Caps";
-  font-size: 4.063rem;
-  line-height: 3rem;
-  padding-top: 4rem;
-  width: 75%;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.75rem;
+  margin: 1.5rem 0;
 }
 
 * + h2 {
@@ -214,14 +170,17 @@ h2 {
 }
 
 h3 {
-  font-family: "Source Code Pro Bold";
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: normal;
 }
 
 h4 {
-  font-family: "Source Code Pro Bold";
-  font-size: 1.25rem;
-  margin-top: 1.25rem;
+  font-size: 1.563rem;
+  line-height: 2rem;
+  font-weight: normal;
 }
+
 
 p {
   /* -moz-hyphens: auto;
@@ -233,16 +192,15 @@ p {
 
 /* Inline Elements */
 a {
-  color: var(--color-black);
-  font-family: "Source Code Pro Bold";
+  color: var(--color-white);
   text-decoration: underline;
-  text-decoration-color: var(--color-gold);
+  text-decoration-color: var(--color-black);
   text-underline-offset: .25rem;
 }
 
 a:focus,
 a:hover {
-  color: var(--color-black);
+  color: var(--color-primary-lighter);
   text-decoration: underline;
 }
 
@@ -251,13 +209,26 @@ a span {
   font-weight: 300;
 }
 
+a[href="#TODO"]::before {
+  content: "TODO: ";
+  font-weight: 600;
+  color: #000000;
+}
+
+a[href="#TODO"] {
+  background-color: var(--color-todo);
+  opacity: 0.5;
+  padding: .25rem;
+  text-decoration: none;
+}
+
 strong {
   font-weight: 400;
 }
 
 code,
 kbd {
-  font-family: "Metropolis", monospace;
+  font-family: monospace;
   letter-spacing: .0625rem;
 }
 
@@ -285,18 +256,6 @@ abbr {
   height: 1.813rem;
   margin-top: 2.188rem;
   margin-left: 4.375rem;
-}
-
-.logo-full-color {
-  background-image: url(/images/logos/oes/logo-full-color.png);
-}
-
-.logo-white-gold {
-  background-image: url(/images/logos/oes/logo-white-gold.png);
-}
-
-.logo-white-vertical {
-  background-image: url(/images/logos/oes/logo-white-vertical.png);
 }
 
 .error,
@@ -337,7 +296,7 @@ ul.heroes li {
 
 ul.heroes li div.thumbnail {
   position: absolute;
-  background-color: var(--color-purple);
+  background-color: var(--color-primary);
   left: 0;
   top: 0%;
   border-radius: 12px 12px 0 0;
@@ -354,11 +313,9 @@ ul.heroes li p.more-link {
 }
 
 ul.heroes li a {
-  font-family: "Source Code Pro Regular";
 }
 
 ul.heroes h3 a {
-  font-family: "Source Code Pro Bold";
   font-size: 1.1rem;
   line-height: 1rem;
   text-decoration: none;
@@ -433,7 +390,6 @@ article.teaser h3 a {
 }
 
 article.teaser h3 {
-  font-family: "Source Code Pro Bold";
   font-size: 1rem;
   line-height: 1.25rem;
   margin: 0rem auto 0rem;
@@ -574,7 +530,6 @@ ul.floating-cards li:nth-last-child(even) {
 }
 
 .floating-card article h3 {
-  font-family: "Coco Sharp Extra Bold";
   line-height: 2.75rem;
   letter-spacing: auto;
   text-transform: lowercase;
@@ -595,7 +550,7 @@ div.bio-pic {
   margin: 2rem 3rem 5rem 3rem;
   background: linear-gradient(var(--color-blue-tint), var(--color-blue));
   background-size: 100%;
-  border: var(--color-purple);
+  border: var(--color-primary);
   border-radius: 12px;
   width: 30%;
   height: 18rem;
@@ -615,7 +570,7 @@ div.bio-pic::before {
 
 div.bio-pic img {
   position: relative;
-  border-top: var(--color-purple);
+  border-top: var(--color-primary);
   border-radius: 12px;
   height: 18rem;
   object-fit: cover;
@@ -660,6 +615,36 @@ div.bio-pic img {
 
 .translations dt { display: none; }
 
+.icon {
+  background: var(--color-primary);
+  border-radius: .25rem;
+  color: var(--color-white);
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 600;
+  line-height: 1em;
+  margin-right: .125rem;
+  padding: .25rem .25rem .25rem .375rem;
+  text-transform: uppercase;
+}
+
+.icon-md {
+  background: var(--color-green);
+}
+
+.icon-txt {
+  background: var(--color-orange);
+}
+
+.icon-adoc {
+  background: var(--color-blue);
+}
+
+.icon:hover {
+  background-color: var(--color-primary-lighter);
+  color: var(--color-white);
+}
+
 header figure {
   line-height: 3rem;
   padding-top: 1rem;
@@ -670,6 +655,21 @@ header figure {
 
 header figure a {
   color: #fff;
+}
+
+header figcaption {
+  font-weight: bold;
+  text-align: center;
+}
+
+header figcaption a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+header figcaption a:hover {
+  color: var(--color-black);
+  text-decoration: none;
 }
 
 header a {
@@ -684,16 +684,85 @@ header a:hover {
   font-weight: 500;
 }
 
-.strapline {
-  font-family: "Backlash Script";
-  text-transform: lowercase;
-  font-size: 4rem;
-  margin-bottom: -3rem;
+.pill {
+  background-color: var(--color-primary);
+  border-radius: 1rem;
+  color: var(--color-white);
+  padding: 0 .5rem;
 }
 
+.pill:hover {
+  background-color: var(--color-primary-lighter);
+}
+
+.pill a {
+  color: var(--color-white);
+}
+
+.pill a:hover {
+  color: var(--color-white);
+  border-bottom: none;
+}
 
 .hidden {
   display: none;
+}
+
+/* Interactive Map */
+
+.map-container {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+#world-map-static {
+  display: block;
+  margin: auto;
+  width: 400px;
+}
+
+#world-map-interactive {
+  width: 797px;
+  height: 449px;
+  margin: auto;
+  display: block;
+}
+
+#infobox {
+  display: none;
+  font-size: .8rem;
+  line-height: 1rem;
+  padding: .5rem;
+  text-align: left;
+  width: 11rem;
+  border: 1px solid var(--color-grey);
+  border-radius: .5rem;
+  background-color: var(--color-white);
+}
+
+.language-info {
+  display: none;
+}
+
+header nav li:first-child {
+  display: none;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+header nav a:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-black);
+}
+
+header a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 form {
@@ -709,23 +778,35 @@ fieldset:last-child {
 }
 
 label {
-  display: flex;
+  display: block;
   margin-bottom: 1.5rem;
   font-weight: bold;
 }
 
-label > :first-child {
-  padding: .25rem .75rem .25rem;
-  width: calc(25% - 1.5rem);
+label p {
+  margin-bottom: 0rem;
 }
 
 button,
 input[type="text"],
 input[type="email"],
 textarea {
-  border: .0625rem solid hsl(0, 0%, 60%);
+  border: .0625rem solid var(--color-grey);
   font: inherit;
   padding: .125rem .25rem;
+  border-radius: .75rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: var(--color-primary);
+}
+
+input[type="text"].error,
+input[type="email"].error,
+textarea.error {
+  border-color: var(--color-red)
 }
 
 .radio-form-group {
@@ -770,14 +851,13 @@ input[type="checkbox"] {
 }
 
 button {
-  background-color: var(--color-purple);
+  background-color: var(--color-primary);
   padding: .25rem 1rem;
   color: #fff;
-  border-radius: 5px;
 }
 
 button:hover {
-  background-color: var(--color-blue-tint);
+  border-color: var(--color-primary-lighter);
 }
 
 button {
@@ -855,13 +935,12 @@ section img {
   position: relative;
   padding: 1rem 0;
   margin-top: 3rem;
-  background: linear-gradient(135deg, var(--color-purple-gradient-dark), var(--color-purple-gradient-light), var(--color-purple-gradient-dark));
+  background: var(--color-primary);
   color: var(--color-white);
   text-align: center;
 }
 
 .banner-takeover h2 {
-  font-family: "Coco Sharp Extra Bold";
   color: var(--color-gold);
   line-height: 3.755rem;
   padding-top: 4rem;
@@ -906,7 +985,6 @@ section img {
 .call-to-action-link {
   display: block;
   text-decoration: none;
-  font-family: "Backlash Script";
   text-transform: lowercase;
   font-size: 4.25rem;
   line-height: 1.25rem;
@@ -932,7 +1010,6 @@ section img {
 
 .call-to-action-bottom h2 {
   text-decoration: none;
-  font-family: "Coco Sharp Extra Bold";
   line-height: 3.755rem;
   padding-top: 4rem;
   letter-spacing: .125rem;
@@ -951,9 +1028,9 @@ section img {
 
 #colophon {
   clear: both;
+  text-align: center;
   position: relative;
-  margin-top: 7rem;
-  font-family: "Source Code Pro Regular";
+  border-top: 1px solid var(--color-white);
   font-size: 1rem;
   flex-direction: column;
   flex-wrap: wrap;
@@ -972,8 +1049,6 @@ section img {
 
 #colophon .colophon-copyright {
   flex: 70%;
-  height: 8rem;
-  margin: 3rem 0 0 12rem;
 }
 
 .faq-block{
@@ -1012,7 +1087,6 @@ a.button {
   width: 9rem;
   background-color: var(--color-gold);
   color: var(--color-white);
-  font-family: "Source Code Pro Regular";
   font-size: 1rem;
   padding: 0.25rem 1rem;
   margin: 0rem auto;
@@ -1035,7 +1109,6 @@ address.byline time {
 
 article h2 {
   color: var(--color-gold);
-  font-family: "Source Code Pro Bold";
   font-size: 1.5rem;
   padding: 1.25rem 0 0 0;
   margin-bottom: -1.25rem;
@@ -1095,7 +1168,6 @@ ul.portraits h3 {
   font-size: 1rem;
   margin-top: 1.25rem;
   line-height: 1.75rem;
-  font-family: "Source Code Pro Regular";
   text-decoration: none;
   color: var(--color-black);
 }
@@ -1116,7 +1188,6 @@ ul.portraits li p {
 
 .principles-title {
   color: var(--color-gold);
-  font-family: "Source Code Pro Bold";
 }
 
 @media (min-width: 300px) {
@@ -1128,10 +1199,8 @@ ul.portraits li p {
   header {
     box-sizing: border-box;
     margin: 0 auto 1rem auto;
-    width: 100%;
     padding: 2rem 2rem;
     color: var(--color-white);
-    height: 67.5rem;
   }
 
   header.subpage {
@@ -1142,6 +1211,10 @@ ul.portraits li p {
     position: absolute;
     top: 1.25rem;
     right: 0.5rem;
+    display: inline-flex;
+    text-align: left;
+    color: var(--color-primary);
+
   }
 
   nav ul {
@@ -1170,7 +1243,7 @@ ul.portraits li p {
     margin: 3rem auto 1rem auto;
     padding: 10% 15% 0 15%;
     padding-bottom: 45rem;
-    border-bottom: 23rem solid var(--color-purple);
+    border-bottom: 23rem solid var(--color-primary);
     height: 52rem;
   }
 
@@ -1263,14 +1336,13 @@ ul.portraits li p {
     margin: 3rem 0 0 12rem;
   }
 
-  h1 {
-    font-size: 3rem;
-    margin-top: 1.25rem;
-    margin-left: 0rem;
+  #world-map-static {
+    display: block;
+    width: 400px;
   }
 
-  h2 {
-    padding-top: 1.25rem;
+  #world-map-interactive {
+    display: none;
   }
 
 }
@@ -1281,7 +1353,6 @@ ul.portraits li p {
 
   header {
     color: var(--color-white);
-    height: 67.5rem;
   }
 
   .page-title {
@@ -1339,8 +1410,6 @@ ul.portraits li p {
   header {
     color: var(--color-white);
     padding-bottom: 6rem;
-    height: 67.5rem;
-    min-height: 30rem;
   }
 
   .logo {
@@ -1434,7 +1503,6 @@ ul.portraits li p {
   }
 
   h3.fancy-subtitle {
-    font-family: "Backlash Script";
     font-size: 3.5rem;
   }
 
@@ -1469,19 +1537,13 @@ ul.portraits li p {
   header {
     color: var(--color-white);
     padding-bottom: 6rem;
-    height: 67.5rem;
-    min-height: 30rem;
     text-align: center;
   }
 
   footer {
     padding: 0 15% 3rem 15%;
-    border-bottom: 13rem solid var(--color-purple);
+    border-bottom: 13rem solid var(--color-primary);
     height: 45rem;
-  }
-
-  .logo {
-    height: 3.813rem;
   }
 
   .banner-takeover {
@@ -1491,10 +1553,19 @@ ul.portraits li p {
     left: 50%;
   }
 
-  .call-to-action-bottom h2 {
-    line-height: 3.755rem;
-    letter-spacing: .125rem;
-    font-size: 3.75rem;
+  .map-container {
+    width: 100%;
+    height: 450px;
+  }
+
+  #world-map-static {
+    display: none;
+    width: 400px;
+    margin: 1rem auto;
+  }
+
+  #world-map-interactive {
+    display: block;
   }
 
 }
