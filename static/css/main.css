@@ -21,6 +21,7 @@
   --color-white: #FFF;
   --color-grey: #ACA4AA;
   --color-grey-darker: #827780;
+  --color-grey-lighter: #dddddd;
   --color-todo: #FFFFBF;
 }
 
@@ -540,10 +541,9 @@ textarea {
 }
 
 .banner {
-  padding: 0 7rem;
-  width: 80%;
+  width: 100%;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
 }
 
 .banner-grid {
@@ -555,8 +555,10 @@ textarea {
 }
 
 .banner-takeover {
-  background-color: var(--color-grey);
+  background-color: var(--color-grey-lighter);
   color: var(--color-black);
+  padding: 1rem 0;
+  width: 100%;
 }
 
 #colophon {
