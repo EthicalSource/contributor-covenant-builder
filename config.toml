@@ -1,5 +1,5 @@
 baseURL = "https://www.contributor-covenant.org"
-canonifyURLs = true
+canonifyURLs = false
 languageCode = "en-us"
 title = "Contributor Covenant"
 disableKinds = ["RSS"]
