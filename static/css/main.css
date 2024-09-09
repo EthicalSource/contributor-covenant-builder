@@ -87,7 +87,6 @@ header figcaption a:hover {
 
 footer {
   font-size: .875rem;
-  text-align: left;
   padding: 1.5rem;
   box-sizing: border-box;
   color: var(--color-white);
@@ -132,6 +131,35 @@ nav a:focus,
 nav a:hover {
   color: var(--color-primary);
   text-decoration-color: var(--color-black);
+}
+
+  .footer-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-count: 3;
+  width: 100%;
+}
+
+.footer-nav .nav-card {
+  flex: 40%;
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.footer-nav ul {
+  list-style: none;
+  margin: 1.25rem 0 0 0;
+  padding: 0;
+}
+
+.footer-nav p {
+  margin-top: 0;
+}
+
+.footer-nav .nav-card ul li {
+  float: none;
+  display: block;
 }
 
 footer ul {
@@ -516,6 +544,7 @@ textarea {
   text-align: center;
   position: relative;
   border-top: 1px solid var(--color-white);
+  margin-top: 1rem;
   font-size: 1rem;
 }
 
@@ -615,31 +644,6 @@ a[target='_blank']::after {
     height: 40rem;
   }
 
-  .footer-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-count: 3;
-    width: 100%;
-  }
-
-  .footer-nav .nav-card {
-    flex: 40%;
-    margin-top: 1.25rem;
-  }
-
-  .footer-nav ul {
-    list-style: none;
-    margin: 1.25rem 0 0 0;
-    padding: 0;
-    text-align: left;
-  }
-
-  .footer-nav .nav-card ul li {
-    float: none;
-    display: block;
-  }
-
   .logo {
     display: inline-flex;
     margin: 0 auto;
@@ -709,12 +713,7 @@ a[target='_blank']::after {
   footer {
     padding: 0 15% 3rem 15%;
     border-bottom: 13rem solid var(--color-primary);
-    height: 45rem;
-  }
-
-  .map-container {
-    width: 100%;
-    height: 450px;
+    height: 28rem;
   }
 
   header {
@@ -740,6 +739,11 @@ a[target='_blank']::after {
 
   nav ul li {
     font-size: .75rem;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 450px;
   }
 
   #world-map-static {
