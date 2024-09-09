@@ -83,8 +83,8 @@
     function placeInfoBox(event) {
       var infoBox = document.getElementById("infobox");
       infoBox.style.position = "absolute";
-      infoBox.style.left = event.clientX + 10 + "px";
-      infoBox.style.top = event.clientY + 50 + "px";
+      infoBox.style.left = event.clientX + 10 + window.scrollX + "px";
+      infoBox.style.top = event.clientY + window.scrollY + "px";
     };
     
     window.addEventListener('mousemove', (event) => {
