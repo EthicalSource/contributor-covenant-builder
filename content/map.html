@@ -3,7 +3,8 @@ title = "Translations"
 +++
 
 <div class="map-container">
-	<img src="/images/world-map.jpg" usemap="#mapmap" class="world-map" />
+  <img src="/images/world-map.jpg" id="world-map-static" />
+	<img src="/images/world-map.jpg" usemap="#mapmap" id="world-map-interactive" />
 	<div id="infobox">
     <div class="language-info" id="ar">...المضايقات للجميع، بغض النظر</div>
     <div class="language-info" id="bn">গোষ্ঠীর অবাধ এবং স্বাগতপূর্ণ ভাবমূর্তি বজায় রাখার আগ্রহে...</div>
@@ -42,41 +43,41 @@ title = "Translations"
 </div>
 
 <map name="mapmap" id="mapmap">
-  <area shape=poly coords="1154,600,1154,615,1139,615,1139,600,1154,600" href="#ar" onmouseover="toggleLanguageBox('ar');" onmouseout="toggleLanguageBox('ar');">
-  <area shape=poly coords="1506,591,1506,606,1491,606,1491,591,1506,591" href="#bn" onmouseover="toggleLanguageBox('bn');" onmouseout="toggleLanguageBox('bn');">
-  <area shape=poly coords="1098,477,1098,492,1082,492,1082,477,1098,477" href="#bs" onmouseover="toggleLanguageBox('bs');" onmouseout="toggleLanguageBox('bs');">
-  <area shape=poly coords="980,486,980,502,965,502,965,486,980,486" href="#ca" onmouseover="toggleLanguageBox('ca');" onmouseout="toggleLanguageBox('ca');">
-  <area shape=poly coords="1020,363,1020,379,1005,379,1005,363,1020,363" href="#da" onmouseover="toggleLanguageBox('da');" onmouseout="toggleLanguageBox('da');">
-  <area shape=poly coords="1026,417,1026,432,1011,432,1011,417,1026,417" href="#de" onmouseover="toggleLanguageBox('de');" onmouseout="toggleLanguageBox('de');">
-  <area shape=poly coords="1098,525,1098,540,1082,540,1082,525,1098,525" href="#el" onmouseover="toggleLanguageBox('el');" onmouseout="toggleLanguageBox('el');">
-  <area shape=poly coords="406,494,406,509,391,509,391,494,406,494" href="#en" onmouseover="toggleLanguageBox('en');" onmouseout="toggleLanguageBox('en');">
-  <area shape=poly coords="600,934,600,949,585,949,585,934,600,934" href="#es" onmouseover="toggleLanguageBox('es');" onmouseout="toggleLanguageBox('es');">
-  <area shape=poly coords="391,627,391,642,376,642,376,627,391,627" href="#es" onmouseover="toggleLanguageBox('es');" onmouseout="toggleLanguageBox('es');">
-  <area shape=poly coords="1290,540,1290,556,1275,556,1275,540,1290,540" href="#fa-IR" onmouseover="toggleLanguageBox('fa-IR');" onmouseout="toggleLanguageBox('fa-IR');">
-  <area shape=poly coords="991,434,991,449,976,449,976,434,991,434" href="#fr" onmouseover="toggleLanguageBox('fr');" onmouseout="toggleLanguageBox('fr');">
-  <area shape=poly coords="1399,606,1399,622,1384,622,1384,606,1399,606" href="#gu" onmouseover="toggleLanguageBox('gu');" onmouseout="toggleLanguageBox('gu');">
-  <area shape=poly coords="1450,622,1450,637,1435,637,1435,622,1450,622" href="#hi" onmouseover="toggleLanguageBox('hi');" onmouseout="toggleLanguageBox('hi');">
-  <area shape=poly coords="1056,437,1056,453,1041,453,1041,437,1056,437" href="#hu" onmouseover="toggleLanguageBox('hu');" onmouseout="toggleLanguageBox('hu');">
-  <area shape=poly coords="1624,794,1624,810,1609,810,1609,794,1624,794" href="#id" onmouseover="toggleLanguageBox('id');" onmouseout="toggleLanguageBox('id');">
-  <area shape=poly coords="853,258,853,273,837,273,837,258,853,258" href="#is" onmouseover="toggleLanguageBox('is');" onmouseout="toggleLanguageBox('is');">
-  <area shape=poly coords="1054,497,1054,512,1039,512,1039,497,1054,497" href="#it" onmouseover="toggleLanguageBox('it');" onmouseout="toggleLanguageBox('it');">
-  <area shape=poly coords="1200,567,1200,583,1184,583,1184,567,1200,567" href="#iw" onmouseover="toggleLanguageBox('iw');" onmouseout="toggleLanguageBox('iw');">
-  <area shape=poly coords="1788,470,1788,485,1773,485,1773,470,1788,470" href="#ja" onmouseover="toggleLanguageBox('ja');" onmouseout="toggleLanguageBox('ja');">
-  <area shape=poly coords="1425,647,1425,662,1409,662,1409,647,1425,647" href="#kn" onmouseover="toggleLanguageBox('kn');" onmouseout="toggleLanguageBox('kn');">
-  <area shape=poly coords="1712,487,1712,502,1696,502,1696,487,1712,487" href="#ko" onmouseover="toggleLanguageBox('ko');" onmouseout="toggleLanguageBox('ko');">
-  <area shape=poly coords="1431,565,1431,580,1415,580,1415,565,1431,565" href="#ma" onmouseover="toggleLanguageBox('ma');" onmouseout="toggleLanguageBox('ma');">
-  <area shape=poly coords="1086,442,1086,457,1071,457,1071,442,1086,442" href="#mk" onmouseover="toggleLanguageBox('mk');" onmouseout="toggleLanguageBox('mk');">
-  <area shape=poly coords="1004,384,1004,399,989,399,989,384,1004,384" href="#nl" onmouseover="toggleLanguageBox('nl');" onmouseout="toggleLanguageBox('nl');">
-  <area shape=poly coords="1080,393,1080,408,1064,408,1064,393,1080,393" href="#pl" onmouseover="toggleLanguageBox('pl');" onmouseout="toggleLanguageBox('pl');">
-  <area shape=poly coords="668,800,668,815,653,815,653,800,668,800" href="#pt-br" onmouseover="toggleLanguageBox('pt-br');" onmouseout="toggleLanguageBox('pt-br');">
-  <area shape=poly coords="920,490,920,506,904,506,904,490,920,490" href="#pt" onmouseover="toggleLanguageBox('pt');" onmouseout="toggleLanguageBox('pt');">
-  <area shape=poly coords="1118,449,1118,465,1102,465,1102,449,1118,449" href="#ro" onmouseover="toggleLanguageBox('ro');" onmouseout="toggleLanguageBox('ro');">
-  <area shape=poly coords="1518,291,1518,306,1503,306,1503,291,1518,291" href="#ru" onmouseover="toggleLanguageBox('ru');" onmouseout="toggleLanguageBox('ru');">
-  <area shape=poly coords="1054,304,1054,319,1039,319,1039,304,1054,304" href="#sv" onmouseover="toggleLanguageBox('sv');" onmouseout="toggleLanguageBox('sv');">
-  <area shape=poly coords="1174,506,1174,522,1159,522,1159,506,1174,506" href="#tr" onmouseover="toggleLanguageBox('tr');" onmouseout="toggleLanguageBox('tr');">
-  <area shape=poly coords="1154,417,1154,432,1139,432,1139,417,1154,417" href="#uk" onmouseover="toggleLanguageBox('uk');" onmouseout="toggleLanguageBox('uk');">
-  <area shape=poly coords="1591,529,1591,545,1576,545,1576,529,1591,529" href="#zh-cn" onmouseover="toggleLanguageBox('zh-cn');" onmouseout="toggleLanguageBox('zh-cn');">
-  <area shape=poly coords="1690,601,1690,617,1675,617,1675,601,1690,601" href="#zh-tw" onmouseover="toggleLanguageBox('zh-tw');" onmouseout="toggleLanguageBox('zh-tw');">
+  <area shape="poly" coords="503,210,503,216,497,216,497,210,503,210" href="fa-IR" onmouseover="toggleLanguageBox('fa-IR');" onmouseout="toggleLanguageBox('fa-IR');">
+  <area shape="poly" coords="450,162,450,168,444,168,444,162,450,162" href="uk" onmouseover="toggleLanguageBox('uk');" onmouseout="toggleLanguageBox('uk');">
+  <area shape="poly" coords="659,234,659,240,653,240,653,234,659,234" href="zh-tw" onmouseover="toggleLanguageBox('zh-tw');" onmouseout="toggleLanguageBox('zh-tw');">
+  <area shape="poly" coords="458,197,458,203,452,203,452,197,458,197" href="tr" onmouseover="toggleLanguageBox('tr');" onmouseout="toggleLanguageBox('tr');">
+  <area shape="poly" coords="421,153,421,159,415,159,415,153,421,153" href="pl" onmouseover="toggleLanguageBox('pl');" onmouseout="toggleLanguageBox('pl');">
+  <area shape="poly" coords="391,149,391,155,385,155,385,149,391,149" href="nl" onmouseover="toggleLanguageBox('nl');" onmouseout="toggleLanguageBox('nl');">
+  <area shape="poly" coords="423,172,423,178,417,178,417,172,423,172" href="mk" onmouseover="toggleLanguageBox('mk');" onmouseout="toggleLanguageBox('mk');">
+  <area shape="poly" coords="436,175,436,181,430,181,430,175,436,175" href="ro" onmouseover="toggleLanguageBox('ro');" onmouseout="toggleLanguageBox('ro');">
+  <area shape="poly" coords="667,189,667,196,661,196,661,189,667,189" href="ko" onmouseover="toggleLanguageBox('ko');" onmouseout="toggleLanguageBox('ko');">
+  <area shape="poly" coords="555,252,555,258,549,258,549,252,555,252" href="kn" onmouseover="toggleLanguageBox('kn');" onmouseout="toggleLanguageBox('kn');">
+  <area shape="poly" coords="558,220,558,226,552,226,552,220,558,220" href="ma" onmouseover="toggleLanguageBox('ma');" onmouseout="toggleLanguageBox('ma');">
+  <area shape="poly" coords="697,183,697,189,691,189,691,183,697,183" href="ja" onmouseover="toggleLanguageBox('ja');" onmouseout="toggleLanguageBox('ja');">
+  <area shape="poly" coords="468,221,468,227,462,227,462,221,468,221" href="iw" onmouseover="toggleLanguageBox('iw');" onmouseout="toggleLanguageBox('iw');">
+  <area shape="poly" coords="411,193,411,200,405,200,405,193,411,193" href="it" onmouseover="toggleLanguageBox('it');" onmouseout="toggleLanguageBox('it');">
+  <area shape="poly" coords="332,100,332,106,326,106,326,100,332,100" href="is" onmouseover="toggleLanguageBox('is');" onmouseout="toggleLanguageBox('is');">
+  <area shape="poly" coords="633,309,633,316,627,316,627,309,633,309" href="id" onmouseover="toggleLanguageBox('id');" onmouseout="toggleLanguageBox('id');">
+  <area shape="poly" coords="412,170,412,176,406,176,406,170,412,170" href="hu" onmouseover="toggleLanguageBox('hu');" onmouseout="toggleLanguageBox('hu');">
+  <area shape="poly" coords="565,242,565,248,559,248,559,242,565,242" href="hi" onmouseover="toggleLanguageBox('hi');" onmouseout="toggleLanguageBox('hi');">
+  <area shape="poly" coords="545,236,545,242,539,242,539,236,545,236" href="gu" onmouseover="toggleLanguageBox('gu');" onmouseout="toggleLanguageBox('gu');">
+  <area shape="poly" coords="428,204,428,210,422,210,422,204,428,204" href="el" onmouseover="toggleLanguageBox('el');" onmouseout="toggleLanguageBox('el');">
+  <area shape="poly" coords="400,162,400,168,394,168,394,162,400,162" href="de" onmouseover="toggleLanguageBox('de');" onmouseout="toggleLanguageBox('de');">
+  <area shape="poly" coords="398,141,398,147,392,147,392,141,398,141" href="da" onmouseover="toggleLanguageBox('da');" onmouseout="toggleLanguageBox('da');">
+  <area shape="poly" coords="382,189,382,195,376,195,376,189,382,189" href="ca" onmouseover="toggleLanguageBox('ca');" onmouseout="toggleLanguageBox('ca');">
+  <area shape="poly" coords="428,186,428,192,422,192,422,186,428,186" href="bs" onmouseover="toggleLanguageBox('bs');" onmouseout="toggleLanguageBox('bs');">
+  <area shape="poly" coords="234,364,234,370,228,370,228,364,234,364" href="es" onmouseover="toggleLanguageBox('es');" onmouseout="toggleLanguageBox('es');">
+  <area shape="poly" coords="450,234,450,240,444,240,444,234,450,234" href="ar" onmouseover="toggleLanguageBox('ar');" onmouseout="toggleLanguageBox('ar');">
+  <area shape="poly" coords="411,118,411,124,405,124,405,118,411,118" href="sv" onmouseover="toggleLanguageBox('sv');" onmouseout="toggleLanguageBox('sv');">
+  <area shape="poly" coords="260,312,260,318,254,318,254,312,260,312" href="pt-br" onmouseover="toggleLanguageBox('pt-br');" onmouseout="toggleLanguageBox('pt-br');">
+  <area shape="poly" coords="158,192,158,198,152,198,152,192,158,192" href="en" onmouseover="toggleLanguageBox('en');" onmouseout="toggleLanguageBox('en');">
+  <area shape="poly" coords="152,244,152,250,146,250,146,244,152,244" href="es" onmouseover="toggleLanguageBox('es');" onmouseout="toggleLanguageBox('es');">
+  <area shape="poly" coords="358,191,358,197,352,197,352,191,358,191" href="pt" onmouseover="toggleLanguageBox('pt');" onmouseout="toggleLanguageBox('pt');">
+  <area shape="poly" coords="620,206,620,212,614,212,614,206,620,206" href="zh-cn" onmouseover="toggleLanguageBox('zh-cn');" onmouseout="toggleLanguageBox('zh-cn');">
+  <area shape="poly" coords="386,169,386,175,380,175,380,169,386,169" href="fr" onmouseover="toggleLanguageBox('fr');" onmouseout="toggleLanguageBox('fr');">
+  <area shape="poly" coords="587,230,587,236,581,236,581,230,587,230" href="bn" onmouseover="toggleLanguageBox('bn');" onmouseout="toggleLanguageBox('bn');">
+  <area shape="poly" coords="592,113,592,119,586,119,586,113,592,113" href="ru" onmouseover="toggleLanguageBox('ru');" onmouseout="toggleLanguageBox('ru');">
 </map>
 
 <script language="javascript">
@@ -86,8 +87,8 @@ title = "Translations"
     function placeInfoBox(event) {
       var infoBox = document.getElementById("infobox");
       infoBox.style.position = "absolute";
-      infoBox.style.left = event.clientX - 90 + "px";
-      infoBox.style.top = event.clientY - 90 +  "px";
+      infoBox.style.left = event.clientX + "px";
+      infoBox.style.top = event.clientY +  "px";
     };
     
     window.addEventListener('mousemove', (event) => {
@@ -99,15 +100,19 @@ title = "Translations"
   });
   
   function toggleLanguageBox(id) {
+
     var languageBox = document.getElementById(id);
     var infoBox = document.getElementById("infobox");
+    var staticMap = document.getElementById("world-map-static");
     
-    if (languageBox.style.display == 'block') {
-      languageBox.style.display = 'none';
-      infoBox.style.display = 'none';
-    } else {
-      languageBox.style.display = "block";
-      infoBox.style.display = "block";
+    if (staticMap.style.display == '') {
+      if (languageBox.style.display == 'block') {
+        languageBox.style.display = 'none';
+        infoBox.style.display = 'none';
+      } else {
+        languageBox.style.display = "block";
+        infoBox.style.display = "block";
+      }
     }
   };
 
