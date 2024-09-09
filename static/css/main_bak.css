@@ -589,12 +589,6 @@ nav {
     font-size: 1rem;
   }
 
-  .logo {
-    margin: -2rem 1rem 0 0;
-    height: 3rem;
-    width: 3rem;
-  }
-
   header {
     height: 4rem;
     border-radius: 3rem;
@@ -634,10 +628,6 @@ nav {
     padding: .25rem;
     text-align: left;
     margin-top: 0rem;
-  }
-
-  .logo {
-    float: left;
   }
 
   .data-list {
