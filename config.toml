@@ -1,4 +1,4 @@
-baseURL = "https://www.contributor-covenant.org"
+baseURL = "https://contributor-covenant.org"
 canonifyURLs = false
 languageCode = "en-us"
 title = "Contributor Covenant"

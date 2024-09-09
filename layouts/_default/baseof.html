@@ -9,27 +9,11 @@
     <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
   </head>
   <body{{ with .Section }} id="{{ . }}"{{ end }}>
-    <div>
-      <header>
-        <figure>
-          <a href="/">
-            <img class="logo" src="/images/logo-inverted.svg" alt="Contributor Covenant logo, which looks like two c-shaped crescents nested together.">
-          </a>
-          <figcaption>
-            <a href="/">Contributor Covenant</a>
-          </figcaption>
-        </figure>
-        {{ partial "navigation" . }}
-      </header>
-    </div>
+    {{ partial "header" }}
     <div id="veil">
       {{ block "main" . }}
       {{ end }}
-      <footer>
-        <p>
-          Contributor Covenant is stewarded by the <a href="https://ethicalsource.dev">Organization for Ethical Source</a>.
-        </p>
-      </footer>
+      {{ partial "footer" }}
     </div>
   </body>
 </html>
