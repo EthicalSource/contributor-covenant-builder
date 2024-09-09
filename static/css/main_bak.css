@@ -87,6 +87,57 @@ header {
   height: 11rem;
 }
 
+header figure {
+  font-size: .75rem;
+  margin: 1.5rem 0;
+}
+
+header figcaption {
+  font-weight: bold;
+  text-align: center;
+}
+
+header figcaption a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+header figcaption a:hover {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: auto;
+}
+
+header nav li {
+  font-size: .75rem;
+  margin: 0rem;
+}
+
+header nav li:first-child {
+  display: none;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+header nav a:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-black);
+}
+
+header a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 footer {
   font-size: .875rem;
   text-align: center;
@@ -127,7 +178,7 @@ th {
   white-space: nowrap;
 }
 
-/* Headers */
+/* Headings */
 h1 {
   font-size: 2.25rem;
   font-weight: 600;
@@ -302,44 +353,6 @@ abbr {
   display: inline-block;
 }
 
-header {
-  text-align: center;
-  border-radius: 5rem;
-}
-
-header figure {
-  font-size: .75rem;
-  width: 40%;
-  float: left;
-  text-align: center;
-  margin: 1.5rem 0;
-}
-
-header figcaption {
-  font-weight: bold;
-  text-align: center;
-}
-
-header figcaption a {
-  color: var(--color-black);
-  text-decoration: none;
-}
-
-header figcaption a:hover {
-  color: var(--color-black);
-  text-decoration: none;
-}
-
-header nav ul {
-  list-style-type: none;
-  margin: auto;
-}
-
-header nav li {
-  font-size: .75rem;
-  margin: 0rem;
-}
-
 .pill {
   background-color: var(--color-primary);
   border-radius: 1rem;
@@ -358,27 +371,6 @@ header nav li {
 .pill a:hover {
   color: var(--color-white);
   border-bottom: none;
-}
-
-header nav li:first-child {
-  display: none;
-}
-
-header nav a {
-  text-decoration: none;
-  color: var(--color-primary);
-}
-
-header nav a:hover {
-  color: var(--color-primary);
-  text-decoration: none;
-  border-bottom: 2px solid var(--color-black);
-}
-
-header a {
-  color: #fff;
-  font-weight: 500;
-  text-decoration: none;
 }
 
 .hidden {
@@ -550,7 +542,8 @@ nav {
   }
 
   header {
-    border-radius: 1rem;
+    border-radius: 0rem;
+    text-align: center;
   }
 
   nav {
@@ -559,13 +552,12 @@ nav {
     text-align: center;
   }
 
-  header {
-    margin-top: 1rem;
-    width: 90%;
-  }
-
   header nav li:first-child {
     display: initial;
+  }
+
+  header figure {
+    width: 50%;
   }
 
   header figcaption {
@@ -585,18 +577,24 @@ nav {
 }
 
 @media (min-width: 800px) {
+
   html {
     font-size: 1rem;
   }
 
   header {
     height: 4rem;
-    border-radius: 3rem;
+    text-align: left;
   }
 
   figure {
     width: 40%;
     margin-top: 0rem;
+  }
+
+  header figure {
+    float: left;
+    text-align: center;
   }
 
   header figcaption {

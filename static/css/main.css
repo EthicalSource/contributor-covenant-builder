@@ -53,6 +53,73 @@ section {
   box-sizing: border-box;
 }
 
+header {
+  color: var(--color-black);
+  background: var(--color-primary-subtle);
+  width: 80%;
+  border-radius: 5rem;
+}
+
+header figure {
+  width: 60%;
+  float: left;
+  text-align: center;
+  margin-top: -1.5rem;
+}
+
+header figcaption {
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 3rem;
+}
+
+header figcaption a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+header figcaption a:hover {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+footer {
+  text-align: left;
+  box-sizing: border-box;
+  color: var(--color-white);
+  background: var(--color-primary);
+  width: 77.188rem;
+  clear: both;
+}
+
+footer h2 {
+  margin: 1.25rem;
+}
+
+footer h2 {
+  margin: 1.25rem;
+}
+
+footer p {
+  clear: both;
+  text-align: left;
+  margin-top: 1.25rem;
+  margin-left: 1rem;
+}
+
+footer a {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+footer a:focus,
+footer a:hover {
+  color: var(--color-white);
+  text-decoration-color: var(--color-white);
+}
+
 nav {
   padding: .25rem;
   height: 3.25rem;
@@ -106,79 +173,13 @@ strong {
   font-weight: 600 !important;
 }
 
-header {
-  color: var(--color-black);
-  background: var(--color-primary-subtle);
-  width: 80%;
-  border-radius: 5rem;
-}
-
-header figure {
-  width: 40%;
-  float: left;
-  text-align: left;
-  margin-top: -1.5rem;
-}
-
-header figcaption {
-  margin-top: -2.75rem;
-  margin-left: 3.75rem;
-  font-weight: bold;
-  text-align: left;
-}
-
-header figcaption a {
-  color: var(--color-black);
-  text-decoration: none;
-}
-
-header figcaption a:hover {
-  color: var(--color-black);
-  text-decoration: none;
-}
-
-footer {
-  text-align: left;
-  box-sizing: border-box;
-  color: var(--color-white);
-  background: var(--color-primary);
-  width: 77.188rem;
-  clear: both;
-}
-
-footer h2 {
-  margin: 1.25rem;
-}
-
-footer h2 {
-  margin: 1.25rem;
-}
-
-footer p {
-  clear: both;
-  text-align: left;
-  margin-top: 1.25rem;
-  margin-left: 1rem;
-}
-
-footer a {
-  color: var(--color-white);
-  text-decoration: underline;
-}
-
-footer a:focus,
-footer a:hover {
-  color: var(--color-white);
-  text-decoration-color: var(--color-white);
-}
-
 blockquote {
   border-left: .75rem solid var(--color-light-grey);
   margin-left: 1.25rem;
   padding-left: 2.25rem;
 }
 
-/* Headers */
+/* Headings */
 
 @keyframes appear{
   0% {
@@ -575,6 +576,9 @@ a[target='_blank']::after {
     box-sizing: border-box;
     margin: 0 auto 1rem auto;
     padding: 2rem 2rem;
+    width: 100%;
+    border-radius: 0;
+    height: 14rem;
   }
 
   nav {
@@ -656,10 +660,10 @@ a[target='_blank']::after {
     margin: 0 auto;
     height: 3rem;
     width: 3rem;
+    margin-top: 2rem;
   }
 
   header figcaption {
-    line-height: 1.25rem;
     font-weight: 600;
   }
 
@@ -700,6 +704,11 @@ a[target='_blank']::after {
 
   body {
     width: 100%;
+  }
+
+  header {
+    width: 90%;
+    border-radius: 5rem;
   }
 
   section {
@@ -750,6 +759,23 @@ a[target='_blank']::after {
     height: 3rem;
   }
 
+  header figure {
+    width: 40%;
+    float: left;
+    text-align: left;
+    margin-top: -3.5rem;
+  }
+
+  header figcaption {
+    margin-top: -3.5rem;
+    margin-left: 3.75rem;
+    font-size: 1.25rem;
+    text-align: left;
+  }
+
+  nav ul li {
+    font-size: .75rem;
+  }
 
   #world-map-static {
     display: none;
