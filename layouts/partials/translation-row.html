@@ -1,9 +1,3 @@
-<tr>
-  <td>
-    <a href="{{ .Permalink | absLangURL }}">{{ .Language.LanguageName }}</a>
-  </td>
-  <td>{{ .Params.version }}</td>
-  <td class="file-formats">
-    {{ partial "file-formats.html" . }}
-  </td>
-</tr>
+<li>
+  <a href="{{ .Permalink | absLangURL }}">{{ .Language.LanguageName }}</a> ({{ .Params.version }})
+</li>
