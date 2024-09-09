@@ -86,7 +86,9 @@ header figcaption a:hover {
 }
 
 footer {
+  font-size: .875rem;
   text-align: left;
+  padding: 1.5rem;
   box-sizing: border-box;
   color: var(--color-white);
   background: var(--color-primary);
@@ -100,13 +102,6 @@ footer h2 {
 
 footer h2 {
   margin: 1.25rem;
-}
-
-footer p {
-  clear: both;
-  text-align: left;
-  margin-top: 1.25rem;
-  margin-left: 1rem;
 }
 
 footer a {
@@ -522,9 +517,6 @@ textarea {
   position: relative;
   border-top: 1px solid var(--color-white);
   font-size: 1rem;
-  flex-direction: column;
-  flex-wrap: wrap;
-  column-gap: 10%;
 }
 
 #colophon .colophon-logo {
@@ -538,9 +530,8 @@ textarea {
 }
 
 #colophon .colophon-copyright {
-  flex: 70%;
+  text-align: center;
 }
-
 
 a.button {
   display: block;
@@ -581,6 +572,10 @@ a[target='_blank']::after {
     height: 14rem;
   }
 
+  header figcaption {
+    font-weight: 600;
+  }
+
   nav {
     position: absolute;
     top: 1.25rem;
@@ -616,8 +611,8 @@ a[target='_blank']::after {
     margin: 3rem auto 1rem auto;
     padding: 10% 15% 0 15%;
     padding-bottom: 45rem;
-    border-bottom: 23rem solid var(--color-primary);
-    height: 52rem;
+    border-bottom: 9rem solid var(--color-primary);
+    height: 40rem;
   }
 
   .footer-nav {
@@ -645,42 +640,12 @@ a[target='_blank']::after {
     display: block;
   }
 
-  #colophon .colophon-logo {
-    flex: 15%;
-  }
-
-  #colophon .colophon-copyright {
-    flex: 70%;
-    height: 8rem;
-    margin: 3rem 0 0 12rem;
-  }
-
   .logo {
     display: inline-flex;
     margin: 0 auto;
     height: 3rem;
     width: 3rem;
     margin-top: 2rem;
-  }
-
-  header figcaption {
-    font-weight: 600;
-  }
-
-  #colophon .colophon-logo {
-    flex: 10%;
-  }
-
-  #colophon .logo {
-    height: 8rem;
-    display: inline-block;
-    margin: -1.65rem;
-  }
-
-  #colophon .colophon-copyright {
-    flex: 00%;
-    height: 8rem;
-    margin: 3rem 0 0 12rem;
   }
 
   #world-map-static {
