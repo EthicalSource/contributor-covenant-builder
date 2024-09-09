@@ -346,8 +346,17 @@ header nav li {
   padding: 0 .5rem;
 }
 
+.pill:hover {
+  background-color: var(--color-primary-lighter);
+}
+
 .pill a {
   color: var(--color-white);
+}
+
+.pill a:hover {
+  color: var(--color-white);
+  border-bottom: none;
 }
 
 header nav li:first-child {
@@ -357,6 +366,12 @@ header nav li:first-child {
 header nav a {
   text-decoration: none;
   color: var(--color-primary);
+}
+
+header nav a:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-black);
 }
 
 header a {
