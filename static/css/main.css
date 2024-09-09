@@ -374,12 +374,12 @@ header a {
 .map-container {
   text-size: .5rem;
   width: 80%;
-  border: 5px solid #900;
 }
 
 .world-map {
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  border: 1px solid #090;
 }
 
 #infobox {
