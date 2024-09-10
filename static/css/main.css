@@ -21,6 +21,8 @@
   --color-white: #FFF;
   --color-grey: #ACA4AA;
   --color-grey-darker: #827780;
+  --color-grey-lighter: #DDD;
+  --color-grey-subtle: #EEE;
   --color-todo: #FFFFBF;
 }
 
@@ -71,8 +73,8 @@ header figcaption {
   margin-top: 1rem;
   font-weight: 600;
   text-align: center;
-  font-size: 2.25rem;
-  line-height: 3rem;
+  font-size: 1.75rem;
+  line-height: 2rem;
 }
 
 header figcaption a {
@@ -217,7 +219,7 @@ h1 {
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 3.25rem;
-  margin: 3rem 0;
+  margin: 0 0;
   animation: appear 2s;
   animation-fill-mode: both;
 }
@@ -539,6 +541,25 @@ textarea {
   resize: none;
 }
 
+.banner {
+  width: 90%;
+  background-size: cover;
+  padding: 1rem;
+  margin: 0rem auto;
+}
+
+.banner-grid {
+  background-image: url("/images/grid.svg");
+}
+
+.banner-dots {
+  background-image: url("/images/dots.svg");
+}
+
+.banner-takeover {
+  background-color: var(--color-primary-subtle);
+}
+
 #colophon {
   clear: both;
   text-align: center;
@@ -548,18 +569,10 @@ textarea {
   font-size: 1rem;
 }
 
-#colophon .colophon-logo {
-  flex: 25%;
-}
-
-#colophon .logo {
-  height: 8rem;
-  display: inline-block;
-  margin: -1.65rem;
-}
-
-#colophon .colophon-copyright {
-  text-align: center;
+.oes-logo {
+  height: 6rem;
+  width: auto;
+  float: none;
 }
 
 a.button {
@@ -573,18 +586,6 @@ a.button {
   border-radius: 13px;
   text-align: center;
 }
-
-a[target='_blank']::after {
-  content: "";
-  width: .8em;
-  height: .8em;
-  margin: 0 -0.25rem 0 0.1em;
-  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNOSAyTDkgMyAxMi4zIDMgNiA5LjMgNi43IDEwIDEzIDMuNyAxMyA3IDE0IDcgMTQgMlpNNCA0QzIuOSA0IDIgNC45IDIgNkwyIDEyQzIgMTMuMSAyLjkgMTQgNCAxNEwxMCAxNEMxMS4xIDE0IDEyIDEzLjEgMTIgMTJMMTIgNyAxMSA4IDExIDEyQzExIDEyLjYgMTAuNiAxMyAxMCAxM0w0IDEzQzMuNCAxMyAzIDEyLjYgMyAxMkwzIDZDMyA1LjQgMy40IDUgNCA1TDggNSA5IDRaIi8+PC9zdmc+) no-repeat;
-  background-size: contain;
-  display: inline-block;
-  vertical-align: baseline;
-}
-
 
 @media (min-width: 300px) {
 
@@ -630,7 +631,7 @@ a[target='_blank']::after {
   section {
     box-sizing: border-box;
     width: 100%;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 3rem auto;
     padding: 1.25rem;
   }
 
@@ -654,7 +655,7 @@ a[target='_blank']::after {
 
   #world-map-static {
     display: block;
-    width: 400px;
+    width: 90%;
   }
 
   #world-map-interactive {
@@ -682,8 +683,15 @@ a[target='_blank']::after {
 
   section {
     box-sizing: border-box;
-    width: 60rem;
-    margin: 0 auto 1rem auto;
+    /* width: 60rem; */
+    width: 100%;
+    margin: 0 auto 3rem auto;
+  }
+
+  p {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   nav {
@@ -739,6 +747,12 @@ a[target='_blank']::after {
 
   nav ul li {
     font-size: .75rem;
+  }
+
+  .oes-logo {
+    height: 6rem;
+    width: auto;
+    float: left;
   }
 
   .map-container {
