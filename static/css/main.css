@@ -543,7 +543,6 @@ textarea {
 .banner {
   width: 100%;
   background-size: cover;
-  /* background-position: center; */
 }
 
 .banner-grid {
@@ -573,7 +572,7 @@ textarea {
 .oes-logo {
   height: 6rem;
   width: auto;
-  float: left;
+  float: none;
 }
 
 a.button {
@@ -632,7 +631,7 @@ a.button {
   section {
     box-sizing: border-box;
     width: 100%;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 3rem auto;
     padding: 1.25rem;
   }
 
@@ -684,8 +683,15 @@ a.button {
 
   section {
     box-sizing: border-box;
-    width: 60rem;
-    margin: 0 auto 1rem auto;
+    /* width: 60rem; */
+    width: 100%;
+    margin: 0 auto 3rem auto;
+  }
+
+  p {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   nav {
@@ -741,6 +747,12 @@ a.button {
 
   nav ul li {
     font-size: .75rem;
+  }
+
+  .oes-logo {
+    height: 6rem;
+    width: auto;
+    float: left;
   }
 
   .map-container {
