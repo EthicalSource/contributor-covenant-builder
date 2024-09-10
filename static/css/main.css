@@ -24,6 +24,7 @@
   --color-grey-lighter: #DDD;
   --color-grey-subtle: #EEE;
   --color-todo: #FFFFBF;
+  --burst-size: 10rem;
 }
 
 /* Primary Elements */
@@ -135,7 +136,7 @@ nav a:hover {
   text-decoration-color: var(--color-black);
 }
 
-  .footer-nav {
+.footer-nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -357,12 +358,12 @@ kbd {
   color: var(--color-white);
 }
 
-
 .pill {
   background-color: var(--color-primary);
   border-radius: 1rem;
   color: var(--color-white);
-  padding: 0 .5rem;
+  padding: 1rem;
+  font-size: .75rem;
 }
 
 .pill:hover {
@@ -374,10 +375,22 @@ kbd {
   text-decoration: none;
 }
 
-.pill a:hover {
+.pill a:hover, {
   color: var(--color-white);
   border-bottom: none;
   text-decoration: none;
+}
+
+a.pill:hover {
+  color: var(--color-white);
+border-bottom: none;
+text-decoration: none;
+}
+
+nav .pill {
+  padding: 0 0.5rem;
+  font-size: .75rem;
+  text-align: center;
 }
 
 .hidden {
@@ -545,7 +558,7 @@ textarea {
   width: 90%;
   background-size: cover;
   padding: 1rem;
-  margin: 0rem auto;
+  margin: 0rem auto 2rem auto;
 }
 
 .banner-grid {
@@ -558,6 +571,8 @@ textarea {
 
 .banner-takeover {
   background-color: var(--color-primary-subtle);
+  background-position-y: 3rem;
+  padding-bottom: 2rem;
 }
 
 #colophon {
@@ -575,16 +590,63 @@ textarea {
   float: none;
 }
 
-a.button {
-  display: block;
-  width: 9rem;
-  background-color: var(--color-gold);
-  color: var(--color-white);
-  font-size: 1rem;
-  padding: 0.25rem 1rem;
+.burst-container {
+  float: none;
+  width: 100%;
   margin: 0rem auto;
-  border-radius: 13px;
+}
+
+.burst {
+  background: var(--color-primary-lighter);
+  height: var(--burst-size);
+  width: var(--burst-size);
+  position: relative;
   text-align: center;
+  margin: 3.25rem;
+  border-radius: 1rem;
+}
+
+.burst:before,
+.burst:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--burst-size);
+  width: var(--burst-size);
+  background-color: var(--color-primary-lighter);
+  border-radius: 1rem;
+}
+
+.burst:before {
+  transform: rotate(30deg);
+}
+
+.burst:after {
+  transform: rotate(60deg);
+}
+
+.burst .caption {
+  position: absolute;
+  top: calc(var(--burst-size) / 5);
+  margin: 0 auto;
+  width: var(--burst-size);
+  z-index: 900;
+  color: var(--color-white);
+  padding: 0.25rem;
+  transform: rotate(5deg);
+}
+
+.burst .caption h3 {
+  color: var(--color-white);
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  margin: 0.5rem 0;
+}
+
+.burst .caption a {
+    color: var(--color-white);
 }
 
 @media (min-width: 300px) {
@@ -755,8 +817,13 @@ a.button {
     float: left;
   }
 
+  .burst-container {
+    float: left;
+    width: 30%;
+    margin: 0rem auto;
+  }
+
   .map-container {
-    width: 100%;
     height: 450px;
   }
 
