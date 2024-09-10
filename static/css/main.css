@@ -21,7 +21,8 @@
   --color-white: #FFF;
   --color-grey: #ACA4AA;
   --color-grey-darker: #827780;
-  --color-grey-lighter: #dddddd;
+  --color-grey-lighter: #DDD;
+  --color-grey-subtle: #EEE;
   --color-todo: #FFFFBF;
 }
 
@@ -72,8 +73,8 @@ header figcaption {
   margin-top: 1rem;
   font-weight: 600;
   text-align: center;
-  font-size: 2.25rem;
-  line-height: 3rem;
+  font-size: 1.75rem;
+  line-height: 2rem;
 }
 
 header figcaption a {
@@ -218,7 +219,7 @@ h1 {
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 3.25rem;
-  margin: 3rem 0;
+  margin: 0 0;
   animation: appear 2s;
   animation-fill-mode: both;
 }
@@ -541,8 +542,10 @@ textarea {
 }
 
 .banner {
-  width: 100%;
+  width: 90%;
   background-size: cover;
+  padding: 1rem;
+  margin: 0rem auto;
 }
 
 .banner-grid {
@@ -554,10 +557,7 @@ textarea {
 }
 
 .banner-takeover {
-  background-color: var(--color-grey-lighter);
-  color: var(--color-black);
-  padding: 1rem 0;
-  width: 100%;
+  background-color: var(--color-primary-subtle);
 }
 
 #colophon {
@@ -655,7 +655,7 @@ a.button {
 
   #world-map-static {
     display: block;
-    width: 400px;
+    width: 90%;
   }
 
   #world-map-interactive {
