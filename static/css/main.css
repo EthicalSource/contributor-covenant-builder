@@ -328,36 +328,6 @@ kbd {
   white-space: nowrap;
 }
 
-.icon {
-  background: var(--color-primary);
-  border-radius: .25rem;
-  color: var(--color-white);
-  display: inline-block;
-  font-size: .75rem;
-  font-weight: 600;
-  line-height: 1em;
-  margin-right: .125rem;
-  padding: .25rem .25rem .25rem .375rem;
-  text-transform: uppercase;
-}
-
-.icon-md {
-  background: var(--color-green);
-}
-
-.icon-txt {
-  background: var(--color-orange);
-}
-
-.icon-adoc {
-  background: var(--color-blue);
-}
-
-.icon:hover {
-  background-color: var(--color-primary-lighter);
-  color: var(--color-white);
-}
-
 .pill {
   background-color: var(--color-primary);
   border-radius: 1rem;
@@ -383,18 +353,14 @@ kbd {
 
 a.pill:hover {
   color: var(--color-white);
-border-bottom: none;
-text-decoration: none;
+  border-bottom: none;
+  text-decoration: none;
 }
 
 nav .pill {
   padding: 0 0.5rem;
   font-size: .75rem;
   text-align: center;
-}
-
-.hidden {
-  display: none;
 }
 
 /* Interactive Map */
@@ -558,7 +524,7 @@ textarea {
   width: 90%;
   background-size: cover;
   padding: 1rem;
-  margin: 0rem auto 2rem auto;
+  margin: 0rem auto 1rem auto;
   border-radius: 1rem;
 }
 
@@ -571,32 +537,36 @@ textarea {
 }
 
 .banner-takeover {
+  margin-top: 2rem;
   background-color: var(--color-primary-subtle);
   background-position-y: 3rem;
   padding-bottom: 2rem;
 }
 
 .adopter-heroes {
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 0rem auto 1rem auto;
 }
 
 .adopter-hero {
-  width: 4rem;
-  height: 4rem;
-  float: left;
+  width: 5rem;
+  height: 5rem;
   background-color: var(--color-white);
   border-radius: 1rem;
   margin: 1rem;
   padding: 1rem;
-}
-
-/* HERE */
-.adopter-hero-column {
-
+  display: flex;
+  justify-content: center;
 }
 
 .adopter-hero img {
-  width: 4rem;
+  max-height: 3rem;
+  max-width: 5rem;
+  margin: auto;
 }
 
 #colophon {
