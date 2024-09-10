@@ -559,6 +559,7 @@ textarea {
   background-size: cover;
   padding: 1rem;
   margin: 0rem auto 2rem auto;
+  border-radius: 1rem;
 }
 
 .banner-grid {
@@ -573,6 +574,29 @@ textarea {
   background-color: var(--color-primary-subtle);
   background-position-y: 3rem;
   padding-bottom: 2rem;
+}
+
+.adopter-heroes {
+
+}
+
+.adopter-hero {
+  width: 4rem;
+  height: 4rem;
+  float: left;
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* HERE */
+.adopter-hero-column {
+
+}
+
+.adopter-hero img {
+  width: 4rem;
 }
 
 #colophon {
@@ -640,8 +664,8 @@ textarea {
 .burst .caption h3 {
   color: var(--color-white);
   font-weight: bold;
-  font-size: 1.75rem;
-  line-height: 1.75rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   margin: 0.5rem 0;
 }
 
