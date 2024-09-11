@@ -324,6 +324,10 @@ kbd {
   font-weight: 600;
 }
 
+.hidden {
+  display: none;
+}
+
 .pill {
   background-color: var(--color-primary);
   border-radius: 1rem;
@@ -375,25 +379,25 @@ header nav a:hover {
 }
 
 form {
-  margin-top: 2em;
+  width: 90%;
+  text-align: left;
 }
 
 fieldset {
   border: 0;
 }
 
-fieldset:last-child {
-  text-align: right;
-}
-
 label {
   display: block;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
   font-weight: bold;
+  text-align: left;
 }
 
 label p {
-  margin-bottom: 0rem;
+  margin: 0;
+  text-align: left;
+
 }
 
 button,
@@ -406,6 +410,18 @@ textarea {
   border-radius: .75rem;
 }
 
+input[type="text"],
+input[type="email"] {
+  width: 90%;
+  text-align: left;
+  padding: 1rem;
+}
+
+textarea {
+  width: 90%;
+  padding: 1rem;
+}
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
@@ -416,6 +432,10 @@ input[type="text"].error,
 input[type="email"].error,
 textarea.error {
   border-color: var(--color-red)
+}
+
+.form-group {
+  text-align: left;
 }
 
 .radio-form-group {
@@ -468,11 +488,6 @@ button {
 
 button:hover {
   border-color: var(--color-primary-lighter);
-}
-
-input,
-textarea {
-  width: 100%;
 }
 
 textarea {
@@ -842,6 +857,20 @@ area {
     font-size: 2rem;
     line-height: 2.75rem;
     max-width: 55%;
+  }
+
+  form {
+    width: 50%;
+    margin: 1rem auto;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
   }
 
   .oes-logo {
