@@ -1,4 +1,4 @@
-/* Pixel-to-rem calculator: https://nekocalc.com/px-to-rem-converter */
+/* Note that this is a responsive, mobile-first layout, so the primary rules defined here apply to smaller portrait-oriented layouts first. The breakpoint is set by an 800px media query that overrides just the minimum attributes defined above. */
 
 * {
   margin: 0;
@@ -227,11 +227,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 500;
-  line-height: 2.75rem;
+  line-height: 2rem;
   margin: 1.5rem auto;
-  max-width: 55%;
+  max-width: 80%;
 }
 
 * + h2 {
@@ -282,6 +282,19 @@ a[href="#TODO"] {
   text-decoration: none;
 }
 
+/* Extermal link icon */
+
+a[target='_blank']::after {
+  content: "";
+  width: .8em;
+  height: .8em;
+  margin: 0 -0.25rem 0 0.1em;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNGRkZGRkYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNOSAyTDkgMyAxMi4zIDMgNiA5LjMgNi43IDEwIDEzIDMuNyAxMyA3IDE0IDcgMTQgMlpNNCA0QzIuOSA0IDIgNC45IDIgNkwyIDEyQzIgMTMuMSAyLjkgMTQgNCAxNEwxMCAxNEMxMS4xIDE0IDEyIDEzLjEgMTIgMTJMMTIgNyAxMSA4IDExIDEyQzExIDEyLjYgMTAuNiAxMyAxMCAxM0w0IDEzQzMuNCAxMyAzIDEyLjYgMyAxMkwzIDZDMyA1LjQgMy40IDUgNCA1TDggNSA5IDRaIi8+PC9zdmc+) no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
 strong {
   font-weight: 400;
 }
@@ -309,6 +322,10 @@ kbd {
 .important {
   color: var(--color-red);
   font-weight: 600;
+}
+
+.hidden {
+  display: none;
 }
 
 .pill {
@@ -362,25 +379,25 @@ header nav a:hover {
 }
 
 form {
-  margin-top: 2em;
+  width: 90%;
+  text-align: left;
 }
 
 fieldset {
   border: 0;
 }
 
-fieldset:last-child {
-  text-align: right;
-}
-
 label {
   display: block;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
   font-weight: bold;
+  text-align: left;
 }
 
 label p {
-  margin-bottom: 0rem;
+  margin: 0;
+  text-align: left;
+
 }
 
 button,
@@ -393,6 +410,18 @@ textarea {
   border-radius: .75rem;
 }
 
+input[type="text"],
+input[type="email"] {
+  width: 90%;
+  text-align: left;
+  padding: 1rem;
+}
+
+textarea {
+  width: 90%;
+  padding: 1rem;
+}
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
@@ -403,6 +432,10 @@ input[type="text"].error,
 input[type="email"].error,
 textarea.error {
   border-color: var(--color-red)
+}
+
+.form-group {
+  text-align: left;
 }
 
 .radio-form-group {
@@ -455,11 +488,6 @@ button {
 
 button:hover {
   border-color: var(--color-primary-lighter);
-}
-
-input,
-textarea {
-  width: 100%;
 }
 
 textarea {
@@ -545,11 +573,12 @@ textarea {
 .floating-card-container li {
   display: flex;
   justify-content: center;
-  width: 45%;
+  width: 100%;
   text-align: center;
   border: 1px solid var(--color-grey-lighter);
   border-radius: 1rem;
   margin: .5rem;
+  padding: 1rem;
   background-color: var(--color-grey-subtle);
   font-size: .9rem;
 }
@@ -795,8 +824,8 @@ area {
 
   footer {
     padding: 0 15% 3rem 15%;
-    border-bottom: 13rem solid var(--color-primary);
-    height: 28rem;
+    border-bottom: 14rem solid var(--color-primary);
+    height: 32rem;
   }
 
   header {
@@ -814,7 +843,7 @@ area {
   }
 
   header figcaption {
-    margin-top: -3.5rem;
+    margin-top: -3rem;
     margin-left: 3.75rem;
     font-size: 1.25rem;
     text-align: left;
@@ -822,6 +851,26 @@ area {
 
   nav ul li {
     font-size: .75rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.75rem;
+    max-width: 55%;
+  }
+
+  form {
+    width: 50%;
+    margin: 1rem auto;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
   }
 
   .oes-logo {
@@ -846,6 +895,10 @@ area {
 
   .map-container {
     height: 450px;
+  }
+
+  .floating-card-container li {
+    width: 45%;
   }
 
   #world-map-static {
