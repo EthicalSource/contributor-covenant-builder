@@ -569,6 +569,21 @@ textarea {
   margin: auto;
 }
 
+.adopters-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.adopters-list li {
+  width: 40%;
+  text-align: left;
+  font-size: .8rem;
+}
+
 #colophon {
   clear: both;
   text-align: center;
@@ -815,6 +830,14 @@ textarea {
     float: left;
     width: 30%;
     margin: 0rem auto;
+  }
+
+  .adopters-list {
+    width: 75%;
+  }
+
+  .adopters-list li {
+    width: 30%;
   }
 
   .map-container {

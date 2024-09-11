@@ -1,9 +1,17 @@
 +++
-title = "Adopters"
+title = "Featured Adopters"
 +++
 
-## Adopters
+# Featured Contributor Covenant Adopters
 
-{{< data-list "static/adopters.csv" >}}
+To add your project, community, or event to this list, TODO
 
-To add your project, community, or event to this list, [what to do](#TODO).
+{{< adopters "featured-adopters.csv" >}}
+
+## More Adopters
+
+{{< adopters "adopters.csv" >}}
+
+
+
+
