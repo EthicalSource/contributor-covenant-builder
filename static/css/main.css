@@ -223,13 +223,15 @@ h1 {
   margin: 0 0;
   animation: appear 2s;
   animation-fill-mode: both;
+  margin: inherit auto;
 }
 
 h2 {
   font-size: 2rem;
   font-weight: 500;
   line-height: 2.75rem;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
+  max-width: 55%;
 }
 
 * + h2 {
@@ -467,10 +469,11 @@ textarea {
 
 .banner {
   width: 90%;
-  background-size: cover;
+  background-size: fit;
   padding: 1rem;
   margin: 0rem auto 1rem auto;
   border-radius: 1rem;
+  background-repeat: no-repeat;
 }
 
 .banner-grid {
