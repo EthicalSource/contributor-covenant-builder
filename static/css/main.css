@@ -363,42 +363,6 @@ nav .pill {
   text-align: center;
 }
 
-/* Interactive Map */
-
-.map-container {
-  width: 100%;
-  margin: 1rem auto;
-}
-
-#world-map-static {
-  display: block;
-  margin: auto;
-  width: 400px;
-}
-
-#world-map-interactive {
-  width: 797px;
-  height: 449px;
-  margin: auto;
-  display: block;
-}
-
-#infobox {
-  display: none;
-  font-size: .8rem;
-  line-height: 1rem;
-  padding: .5rem;
-  text-align: left;
-  width: 11rem;
-  border: 1px solid var(--color-grey);
-  border-radius: .5rem;
-  background-color: var(--color-white);
-}
-
-.language-info {
-  display: none;
-}
-
 header nav li:first-child {
   display: none;
 }
@@ -656,6 +620,47 @@ textarea {
 
 .burst .caption a {
     color: var(--color-white);
+}
+
+/* Interactive Map */
+
+.map-container {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+#world-map-static {
+  display: block;
+  margin: auto;
+  width: 400px;
+}
+
+#world-map-interactive {
+  width: 797px;
+  height: 449px;
+  margin: auto;
+  display: block;
+}
+
+area {
+  display: block;
+  cursor: cell;
+}
+
+#infobox {
+  display: none;
+  font-size: .8rem;
+  line-height: 1rem;
+  padding: .5rem;
+  text-align: left;
+  width: 11rem;
+  border: 1px solid var(--color-grey);
+  border-radius: .5rem;
+  background-color: var(--color-white);
+}
+
+.language-info {
+  display: none;
 }
 
 @media (min-width: 300px) {
