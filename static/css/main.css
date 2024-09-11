@@ -309,25 +309,6 @@ kbd {
   font-weight: 600;
 }
 
-.data-list {
-  list-style: none;
-  -moz-column-count: 1;
-  -ms-column-count: 1;
-  -webkit-column-count: 1;
-  column-count: 1;
-  -moz-column-fill: balance;
-  -ms-column-fill: balance;
-  -webkit-column-fill: balance;
-  column-fill: balance;
-  margin-left: 0;
-}
-
-.data-list li {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .pill {
   background-color: var(--color-primary);
   border-radius: 1rem;
@@ -533,7 +514,7 @@ textarea {
   margin: auto;
 }
 
-.adopters-list {
+.data-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -542,10 +523,10 @@ textarea {
   margin: 0 auto;
 }
 
-.adopters-list li {
+.data-list li {
   width: 40%;
   text-align: left;
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 #colophon {
@@ -787,13 +768,6 @@ area {
     transition: color .5s, background-color .5s
   }
 
-  .data-list {
-    -moz-column-count: 2;
-    -ms-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
-  }
-
   footer {
     padding: 0 15% 3rem 15%;
     border-bottom: 13rem solid var(--color-primary);
@@ -837,11 +811,11 @@ area {
     margin: 0rem auto;
   }
 
-  .adopters-list {
+  .data-list {
     width: 75%;
   }
 
-  .adopters-list li {
+  .data-list li {
     width: 30%;
   }
 
