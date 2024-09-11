@@ -532,6 +532,28 @@ textarea {
   font-size: .9rem;
 }
 
+.floating-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.floating-card-container li {
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  text-align: center;
+  border: 1px solid var(--color-grey-lighter);
+  border-radius: 1rem;
+  margin: .5rem;
+  background-color: var(--color-grey-subtle);
+  font-size: .9rem;
+}
+
 #colophon {
   clear: both;
   text-align: center;
