@@ -1,4 +1,4 @@
-/* Pixel-to-rem calculator: https://nekocalc.com/px-to-rem-converter */
+/* Note that this is a responsive, mobile-first layout, so the primary rules defined here apply to smaller portrait-oriented layouts first. The breakpoint is set by an 800px media query that overrides just the minimum attributes defined above. */
 
 * {
   margin: 0;
@@ -227,11 +227,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 500;
-  line-height: 2.75rem;
+  line-height: 2rem;
   margin: 1.5rem auto;
-  max-width: 55%;
+  max-width: 80%;
 }
 
 * + h2 {
@@ -280,6 +280,19 @@ a[href="#TODO"] {
   opacity: 0.5;
   padding: .25rem;
   text-decoration: none;
+}
+
+/* Extermal link icon */
+
+a[target='_blank']::after {
+  content: "";
+  width: .8em;
+  height: .8em;
+  margin: 0 -0.25rem 0 0.1em;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNGRkZGRkYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNOSAyTDkgMyAxMi4zIDMgNiA5LjMgNi43IDEwIDEzIDMuNyAxMyA3IDE0IDcgMTQgMlpNNCA0QzIuOSA0IDIgNC45IDIgNkwyIDEyQzIgMTMuMSAyLjkgMTQgNCAxNEwxMCAxNEMxMS4xIDE0IDEyIDEzLjEgMTIgMTJMMTIgNyAxMSA4IDExIDEyQzExIDEyLjYgMTAuNiAxMyAxMCAxM0w0IDEzQzMuNCAxMyAzIDEyLjYgMyAxMkwzIDZDMyA1LjQgMy40IDUgNCA1TDggNSA5IDRaIi8+PC9zdmc+) no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 strong {
@@ -545,11 +558,12 @@ textarea {
 .floating-card-container li {
   display: flex;
   justify-content: center;
-  width: 45%;
+  width: 100%;
   text-align: center;
   border: 1px solid var(--color-grey-lighter);
   border-radius: 1rem;
   margin: .5rem;
+  padding: 1rem;
   background-color: var(--color-grey-subtle);
   font-size: .9rem;
 }
@@ -795,8 +809,8 @@ area {
 
   footer {
     padding: 0 15% 3rem 15%;
-    border-bottom: 13rem solid var(--color-primary);
-    height: 28rem;
+    border-bottom: 14rem solid var(--color-primary);
+    height: 32rem;
   }
 
   header {
@@ -814,7 +828,7 @@ area {
   }
 
   header figcaption {
-    margin-top: -3.5rem;
+    margin-top: -3rem;
     margin-left: 3.75rem;
     font-size: 1.25rem;
     text-align: left;
@@ -822,6 +836,12 @@ area {
 
   nav ul li {
     font-size: .75rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.75rem;
+    max-width: 55%;
   }
 
   .oes-logo {
@@ -846,6 +866,10 @@ area {
 
   .map-container {
     height: 450px;
+  }
+
+  .floating-card-container li {
+    width: 45%;
   }
 
   #world-map-static {
