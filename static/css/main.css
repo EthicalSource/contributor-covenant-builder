@@ -309,25 +309,6 @@ kbd {
   font-weight: 600;
 }
 
-.data-list {
-  list-style: none;
-  -moz-column-count: 1;
-  -ms-column-count: 1;
-  -webkit-column-count: 1;
-  column-count: 1;
-  -moz-column-fill: balance;
-  -ms-column-fill: balance;
-  -webkit-column-fill: balance;
-  column-fill: balance;
-  margin-left: 0;
-}
-
-.data-list li {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .pill {
   background-color: var(--color-primary);
   border-radius: 1rem;
@@ -361,42 +342,6 @@ nav .pill {
   padding: 0 0.5rem;
   font-size: .75rem;
   text-align: center;
-}
-
-/* Interactive Map */
-
-.map-container {
-  width: 100%;
-  margin: 1rem auto;
-}
-
-#world-map-static {
-  display: block;
-  margin: auto;
-  width: 400px;
-}
-
-#world-map-interactive {
-  width: 797px;
-  height: 449px;
-  margin: auto;
-  display: block;
-}
-
-#infobox {
-  display: none;
-  font-size: .8rem;
-  line-height: 1rem;
-  padding: .5rem;
-  text-align: left;
-  width: 11rem;
-  border: 1px solid var(--color-grey);
-  border-radius: .5rem;
-  background-color: var(--color-white);
-}
-
-.language-info {
-  display: none;
 }
 
 header nav li:first-child {
@@ -569,7 +514,7 @@ textarea {
   margin: auto;
 }
 
-.adopters-list {
+.data-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -578,10 +523,10 @@ textarea {
   margin: 0 auto;
 }
 
-.adopters-list li {
+.data-list li {
   width: 40%;
   text-align: left;
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 #colophon {
@@ -656,6 +601,47 @@ textarea {
 
 .burst .caption a {
     color: var(--color-white);
+}
+
+/* Interactive Map */
+
+.map-container {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+#world-map-static {
+  display: block;
+  margin: auto;
+  width: 400px;
+}
+
+#world-map-interactive {
+  width: 797px;
+  height: 449px;
+  margin: auto;
+  display: block;
+}
+
+area {
+  display: block;
+  cursor: cell;
+}
+
+#infobox {
+  display: none;
+  font-size: .8rem;
+  line-height: 1rem;
+  padding: .5rem;
+  text-align: left;
+  width: 11rem;
+  border: 1px solid var(--color-grey);
+  border-radius: .5rem;
+  background-color: var(--color-white);
+}
+
+.language-info {
+  display: none;
 }
 
 @media (min-width: 300px) {
@@ -782,13 +768,6 @@ textarea {
     transition: color .5s, background-color .5s
   }
 
-  .data-list {
-    -moz-column-count: 2;
-    -ms-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
-  }
-
   footer {
     padding: 0 15% 3rem 15%;
     border-bottom: 13rem solid var(--color-primary);
@@ -832,11 +811,11 @@ textarea {
     margin: 0rem auto;
   }
 
-  .adopters-list {
+  .data-list {
     width: 75%;
   }
 
-  .adopters-list li {
+  .data-list li {
     width: 30%;
   }
 
