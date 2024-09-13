@@ -338,6 +338,7 @@ kbd {
 
 .pill:hover {
   background-color: var(--color-primary-lighter);
+  color: var(--color-white);
 }
 
 .pill a {
@@ -345,13 +346,8 @@ kbd {
   text-decoration: none;
 }
 
-.pill a:hover, {
-  color: var(--color-white);
-  border-bottom: none;
-  text-decoration: none;
-}
-
-a.pill:hover {
+.pill a:hover,
+.pill a:focus {
   color: var(--color-white);
   border-bottom: none;
   text-decoration: none;
@@ -362,6 +358,14 @@ nav .pill {
   font-size: .75rem;
   text-align: center;
 }
+
+nav .pill a:hover,
+nav .pill a:focus {
+  color: var(--color-white);
+  border-bottom: none;
+  text-decoration: none;
+}
+
 
 header nav li:first-child {
   display: none;
@@ -819,7 +823,6 @@ area {
 
   nav ul li a {
     text-decoration: none;
-    transition: color .5s, background-color .5s
   }
 
   footer {
