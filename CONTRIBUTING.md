@@ -1,10 +1,14 @@
 # Contributing
 
-Please feel free to submit pull requests or open issues to improve the language of this document or to provide additional [translations](https://www.contributor-covenant.org/translations).
+Please feel free to submit pull requests or open issues to improve the language of this document, [code contributions](#developers) to the website, design updates, or to provide additional [translations](https://www.contributor-covenant.org/translations).
 
 You should also check the [issues](https://github.com/EthicalSource/contributor_covenant/issues) for the latest discussions involving the current and future versions of the Contributor Covenant.
 
 If you're new to contributing to projects hosted on Github, or need a refresher, you may find [How to make your first pull request on GitHub](https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/) a useful resource.
+
+## Submitting an Issue or Feature Request
+
+If the issue or feature request you are submitting is not already listed in the [issues](https://github.com/EthicalSource/contributor_covenant/issues), please open a new issue using the **New Issue** button, and then selecting either the **🪲Bug Report** or **💡Feature Request** template.
 
 ## Adding a Project to the List of Adopters
 
@@ -49,11 +53,12 @@ If you are interested in doing a translation, please follow these steps:
 
 ### Developers
 
-Code contributions to improve the development or operation of the [contributor-covenant.org](https://contributor-covenant.org) web site are welcome.
+Code contributions to improve the development or operation of the [contributor-covenant.org](https://contributor-covenant.org) web site are welcome. To do so, first check to make sure your issue is not already listed in the [issues](https://github.com/EthicalSource/contributor_covenant/issues).
 
 #### Build the website locally
 
-To build the website locally, first [install Hugo](https://gohugo.io/getting-started/installing) using your package manager of choice.
+1. To build the website locally, first [fork](https://github.com/EthicalSource/contributor-covenant-builder/fork) the repo and then clone it to your local machine.
+2. [install Hugo](https://gohugo.io/getting-started/installing) using your package manager of choice.
 
 For example, on Debian/Ubuntu:
 
@@ -73,25 +78,26 @@ If you are using [Homebrew](https://brew.sh) on macOS:
 brew install hugo
 ```
 
-#### Start the server
+3. From the respository's root directory, start the development server and then view it at http://localhost:1313/.
 
-From the repository's root directory, start the development server:
 ```bash
 hugo server -D
 ```
 
-## Code Style
+4. Any changes you make will be reflected in the browser.
+
+#### Code Style
 
 - Use spaces for indentation
 - Order properties alphabetically
 
-### HTML
+##### HTML
 
 - Include `alt` attribute for all images
 - Include `title` attribute for all links
 - Close all your tags properly
 
-### CSS
+##### CSS
 
 - Try to use classes instead of IDs unless things are absolutely unique
 - One selector per line
@@ -102,6 +108,10 @@ hugo server -D
 - Maintain [contrast](https://webaim.org/resources/contrastchecker/) to WCAG AA on normal text, WCAG AAA on large text
 - Use colors from [this palette](https://color.adobe.com/Royal-Purples-color-theme-7468845/edit/?copy=true&base=2&rule=Custom&selected=4&name=Copy%20of%20Royal%20Purples&mode=rgb&rgbvalues=0.2980392156862745,0.06666666666666667,0.3803921568627451,0.8,0.14901960784313725,0.1411764705882353,0.403921568627451,0,0.6784313725490196,0.5372549019607843,0.12156862745098039,0.6784313725490196,1,0.7137254901960784,0.08627450980392157&swatchOrder=0,1,2,3,4)
 
-### Markdown
+##### Markdown
 
 - Do not use fancy quotes, dashes, and such; the Markdown processor will handle that.
+
+#### Submitting a Pull Request
+
+TODO: Add a section about submitting a pull request.
