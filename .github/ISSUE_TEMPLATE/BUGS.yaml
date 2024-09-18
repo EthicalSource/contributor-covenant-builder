@@ -1,0 +1,44 @@
+name: 🪲 Bug Report
+description: Submit a bug report
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to submit a feature request. Please search the issue tracker to see if there is an existing issue before submitting.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Describe the issue
+      description: Please descrobe in detail, with steps if applicable, the issue you are seeing.
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to page
+      description: Please provide the link to the specific page where you saw the issue. Enter N/A if it doesn't apply.
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Other not listed
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree that you have searched to see if the issue hasn't been documented all ready, and that I agree to follow the Code of Conduct
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
