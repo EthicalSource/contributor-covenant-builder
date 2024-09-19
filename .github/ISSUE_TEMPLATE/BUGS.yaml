@@ -6,12 +6,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for taking the time to submit a feature request. Please search the issue tracker to see if there is an existing issue before submitting.
+        Thank you for taking the time to submit a bug report. Please search the issue tracker to see if there is an existing issue before submitting.
   - type: textarea
     id: what-happened
     attributes:
       label: Describe the issue
-      description: Please descrobe in detail, with steps if applicable, the issue you are seeing.
+      description: Please describe in detail, with steps if applicable, the issue you are seeing.
       placeholder: Tell us what you see!
       value: "A bug happened!"
     validations:
