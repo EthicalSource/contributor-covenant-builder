@@ -355,7 +355,7 @@ kbd {
 
 nav .pill {
   padding: 0 0.5rem;
-  font-size: .75rem;
+  font-size: 1.0rem;
   text-align: center;
 }
 
@@ -853,7 +853,7 @@ area {
   }
 
   nav ul li {
-    font-size: .75rem;
+    font-size: 1.0rem;
   }
 
   h2 {
