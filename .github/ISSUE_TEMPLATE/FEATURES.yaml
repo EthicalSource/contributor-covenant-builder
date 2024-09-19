@@ -19,7 +19,8 @@ body:
     attributes:
       label: Proposed solution
       description: Share how you feel this would benefit the project.
-    validations: true
+    validations: 
+      required: true
   - type: textarea
     id: additional-context
     attributes:
@@ -29,7 +30,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this feature request, you agree that you have searched to see if the feature hasn't been suggested already, and that I agree to follow the Code of Conduct
+      description: By submitting this feature request, you agree that you have searched to see if the feature hasn't been suggested already, and that you agree to follow the Code of Conduct.
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
