@@ -38,7 +38,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree that you have searched to see if the issue hasn't been documented all ready, and that I agree to follow the Code of Conduct
+      description: By submitting this issue, you agree that you have searched to see if the issue hasn't been documented all ready, and that you agree to follow the Code of Conduct.
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
