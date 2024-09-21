@@ -1,4 +1,4 @@
-/* Note that this is a responsive, mobile-first layout, so the primary rules defined here apply to smaller portrait-oriented layouts first. The breakpoint is set by an 800px media query that overrides just the minimum attributes defined above. */
+/* Note that this is a responsive, mobile-first layout, so the primary rules defined here apply to smaller portrait-oriented layouts first. The breakpoint is set by an 980px media query that overrides just the minimum attributes defined above. */
 
 * {
   margin: 0;
@@ -355,7 +355,7 @@ kbd {
 
 nav .pill {
   padding: 0 0.5rem;
-  font-size: .75rem;
+  font-size: 1.0rem;
   text-align: center;
 }
 
@@ -781,7 +781,7 @@ area {
 /* end @media (min-width: 300px) */
 
 
-@media (min-width: 800px) {
+@media (min-width: 980px) {
 
   html {
     font-size: 1rem;
@@ -853,7 +853,7 @@ area {
   }
 
   nav ul li {
-    font-size: .75rem;
+    font-size: 1.0rem;
   }
 
   h2 {
