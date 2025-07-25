@@ -43,8 +43,16 @@ page = ["html", "markdown", "plaintext", "asciidoc"]
 # Add all translated languages here.
 [languages]
 
+[Languages.af]
+languageName = "Afrikaans"
+languageCode = "af"
+
 [languages.am]
 languageName = "አማርኛ"
+languageCode = "am"
+
+[Languages.am]
+languageName = "Amharic"
 languageCode = "am"
 
 [languages.ar]
@@ -180,6 +188,14 @@ languageCode = "ru"
 languageName = "Slovenščina"
 languageCode = "sl"
 
+[Languages.sn]
+languageName = "Shona"
+languageCode = "sn"
+
+[Languages.st]
+languageName = "Sotho"
+languageCode = "st"
+
 [languages.sv]
 languageName = "Svenska"
 languageCode = "sv"
@@ -213,3 +229,11 @@ languageName = "فارسی"
 languageCode = "fa-IR"
 [languages.fa-IR.params]
 	writingDirection = "rtl"
+
+[Languages.yo]
+languageName = "Yoruba"
+languageCode = "yo"
+
+[Languages.zu]
+languageName = "Zulu"
+languageCode = "zu"
